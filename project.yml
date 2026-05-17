@@ -1,0 +1,108 @@
+name: SCPFoundation
+options:
+  deploymentTarget:
+    iOS: '18.0'
+    watchOS: '10.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+
+targets:
+  SCPFoundationIOS:
+    type: application
+    platform: iOS
+    sources:
+      - Sources/Shared
+      - Sources/iOSApp
+    dependencies:
+      - target: SCPFoundationWidgets
+        embed: true
+    info:
+      path: Sources/iOSApp/Info.plist
+      properties:
+        CFBundleDisplayName: SCP Foundation
+        UILaunchScreen: {}
+        NSSupportsLiveActivities: true
+        NSSupportsLiveActivitiesFrequentUpdates: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.egor.messenger.dictaphone
+        PRODUCT_NAME: SCPFoundationIOS
+        PRODUCT_MODULE_NAME: SCPFoundationIOS
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 75WT3FT4Z5
+        TARGETED_DEVICE_FAMILY: '1,2'
+
+  SCPFoundationWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - Sources/Shared
+      - Sources/WatchApp
+    info:
+      path: Sources/WatchApp/Info.plist
+      properties:
+        CFBundleDisplayName: SCP Watch
+        WKApplication: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.egor.messenger.dictaphone.watchapp
+        PRODUCT_NAME: SCPFoundationWatch
+        PRODUCT_MODULE_NAME: SCPFoundationWatch
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 75WT3FT4Z5
+
+  SCPFoundationWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Sources/iOSApp/LiveActivity
+        excludes:
+          - ContainmentLiveActivityManager.swift
+      - Sources/Widgets
+    info:
+      path: Sources/Widgets/Info.plist
+      properties:
+        CFBundleDisplayName: SCP Widgets
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.egor.messenger.dictaphone.widgets
+        PRODUCT_NAME: SCPFoundationWidgets
+        PRODUCT_MODULE_NAME: SCPFoundationWidgets
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 75WT3FT4Z5
+        SKIP_INSTALL: YES
+
+  SCPFoundationTests:
+    type: bundle.unit-test
+    platform: iOS
+    hostApplication: SCPFoundationIOS
+    sources:
+      - Tests
+    dependencies:
+      - target: SCPFoundationIOS
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.egor.messenger.dictaphone.tests
+        PRODUCT_MODULE_NAME: SCPFoundationTests
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: 75WT3FT4Z5
+        GENERATE_INFOPLIST_FILE: YES
+
+schemes:
+  SCPFoundationIOS:
+    build:
+      targets:
+        SCPFoundationIOS: all
+        SCPFoundationWidgets: all
+        SCPFoundationTests: [test]
+    test:
+      targets:
+        - SCPFoundationTests
+
+  SCPFoundationWatch:
+    build:
+      targets:
+        SCPFoundationWatch: all

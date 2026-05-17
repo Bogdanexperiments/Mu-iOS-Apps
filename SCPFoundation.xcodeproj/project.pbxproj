@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05F8A7E520604F3142EAEBCD /* SCPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893BD9094A0A68980082D40 /* SCPStore.swift */; };
+		0BE143B06B3735589F98CBF7 /* SCPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F760A0CEDB7FF0E0CF4AC11 /* SCPRepository.swift */; };
+		0C205A068668040F93823A60 /* SCPFoundationWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7535E264EB97C1ECC9CA15B1 /* SCPFoundationWatchApp.swift */; };
+		0C51EAA98F0ADF6D5E7793CF /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3115B079E60F8292AEE903 /* SCPIncidentDoc.swift */; };
+		0D91C7017540D0F6656FD0C9 /* SCPListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C385A57404BF418A4E191C3E /* SCPListScreen.swift */; };
+		0DDF5AEDEB6619C784ACA24E /* SCPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893BD9094A0A68980082D40 /* SCPStore.swift */; };
+		1463A6B12633693DE45D6188 /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B833D5D79E095299ADC434E2 /* SCPObject.swift */; };
+		1EAF97C0D39B6A4310E811B1 /* ContainmentActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C20C8C3B88155DC5F9E448 /* ContainmentActivityAttributes.swift */; };
+		302D86F941E1DF88C5A9A732 /* BriefingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A345616AB5CE426DD3CEE1 /* BriefingScreen.swift */; };
+		42A0946A44C8E52B8EAE48BF /* SCPStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5A51BE090A06902965E86A /* SCPStoreTests.swift */; };
+		45391A83B2B02DE16CE16A1B /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F21016A901419A2229BCC1 /* FavoritesScreen.swift */; };
+		4F227BBBD24E2BC47B5B9FF1 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BD66F5EA8FDF6C880D1C8 /* AppLanguage.swift */; };
+		5BEC41C68DD31A519BE700D2 /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CA17125195B4F69DE49422 /* LiquidGlassKit.swift */; };
+		6598CCDF3C97104483077C50 /* SCPFoundationWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 73D3207748BDC83C464CE97C /* SCPFoundationWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		69BE6DAA7E69BDF64166B362 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66BD66F5EA8FDF6C880D1C8 /* AppLanguage.swift */; };
+		72A4F2C92CF391C834AA4512 /* WatchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDC2B31EA76BDFB379C4518 /* WatchRootView.swift */; };
+		7C5D6CBB0C1582C92D698AE3 /* ContainmentActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C20C8C3B88155DC5F9E448 /* ContainmentActivityAttributes.swift */; };
+		8730BACB03B7AFDA64825EFC /* ContainmentLiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5DE84FA75FCE8324F00C0F /* ContainmentLiveActivityManager.swift */; };
+		875D854C51765F4279901124 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CE3243AD7B71365FB0AB0E /* ProfileScreen.swift */; };
+		B43F4EC0297E51324151F91F /* SCPDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD441D58586A0C9F532D76 /* SCPDetailScreen.swift */; };
+		B5EA2BA11B5D638F111356AE /* AuthorizationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483696B6034470F86C969691 /* AuthorizationScreen.swift */; };
+		B9D5ED3A4A499AD49064540A /* SCPFoundationWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF0A02F5A0F330273B2224 /* SCPFoundationWidgetsBundle.swift */; };
+		BA5E794202C15D6527932757 /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CA17125195B4F69DE49422 /* LiquidGlassKit.swift */; };
+		BFA32C4F0B9E4D510FEA7A9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB9E0CA504C7DBA7F306DAC9 /* Assets.xcassets */; };
+		BFA6B5A70B8CF7EF4095CD46 /* IOSRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E349412C16911A995F39B8 /* IOSRootView.swift */; };
+		C22445468BB761FE393E7171 /* SCPFoundationIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40D941804501A13296F5FDB0 /* SCPFoundationIOSApp.swift */; };
+		C67E0FB8F709611F0F5FD170 /* IncidentsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE98896368AC0E0AB354E0 /* IncidentsScreen.swift */; };
+		C760C2D121FF425E361F885B /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B833D5D79E095299ADC434E2 /* SCPObject.swift */; };
+		E231D1E173DCADA1DC2EE574 /* SCPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F760A0CEDB7FF0E0CF4AC11 /* SCPRepository.swift */; };
+		E6D842E2BBEA0A755177C3C9 /* ContainmentActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36CCBE1E8C9507380EE5ECC /* ContainmentActivityWidget.swift */; };
+		EBD4DB6ABD7066CE07423245 /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0CFD31CF3B05A3BD64A32 /* AuthStore.swift */; };
+		F5B1B4CFDB262417EF515ADF /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3115B079E60F8292AEE903 /* SCPIncidentDoc.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E05BA939F2555243764C85D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 682291C7BE9C87446C2ABDB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEA70C07E480D121F7D60C22;
+			remoteInfo = SCPFoundationIOS;
+		};
+		7A852C6538B8497115CBDB89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 682291C7BE9C87446C2ABDB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6A13E771294842DD72F9196;
+			remoteInfo = SCPFoundationWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		40159B5AD8D0069B1B329F39 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6598CCDF3C97104483077C50 /* SCPFoundationWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		08CE3243AD7B71365FB0AB0E /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		0FDC2B31EA76BDFB379C4518 /* WatchRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchRootView.swift; sourceTree = "<group>"; };
+		22DF0A02F5A0F330273B2224 /* SCPFoundationWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPFoundationWidgetsBundle.swift; sourceTree = "<group>"; };
+		252C6BD1A6BBB780C829C327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2893BD9094A0A68980082D40 /* SCPStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPStore.swift; sourceTree = "<group>"; };
+		40D941804501A13296F5FDB0 /* SCPFoundationIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPFoundationIOSApp.swift; sourceTree = "<group>"; };
+		41C20C8C3B88155DC5F9E448 /* ContainmentActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainmentActivityAttributes.swift; sourceTree = "<group>"; };
+		42E349412C16911A995F39B8 /* IOSRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSRootView.swift; sourceTree = "<group>"; };
+		43456867EC16219B5FBF7CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		483696B6034470F86C969691 /* AuthorizationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationScreen.swift; sourceTree = "<group>"; };
+		54FE98896368AC0E0AB354E0 /* IncidentsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentsScreen.swift; sourceTree = "<group>"; };
+		55B78AF0256E1A875451369B /* SCPFoundationWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPFoundationWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F760A0CEDB7FF0E0CF4AC11 /* SCPRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPRepository.swift; sourceTree = "<group>"; };
+		70CA17125195B4F69DE49422 /* LiquidGlassKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiquidGlassKit.swift; sourceTree = "<group>"; };
+		73D3207748BDC83C464CE97C /* SCPFoundationWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = SCPFoundationWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7535E264EB97C1ECC9CA15B1 /* SCPFoundationWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPFoundationWatchApp.swift; sourceTree = "<group>"; };
+		85F21016A901419A2229BCC1 /* FavoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreen.swift; sourceTree = "<group>"; };
+		8AEF78A32D23F253B1E9579C /* SCPFoundationTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SCPFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB0CFD31CF3B05A3BD64A32 /* AuthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthStore.swift; sourceTree = "<group>"; };
+		9C5DE84FA75FCE8324F00C0F /* ContainmentLiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainmentLiveActivityManager.swift; sourceTree = "<group>"; };
+		A36CCBE1E8C9507380EE5ECC /* ContainmentActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainmentActivityWidget.swift; sourceTree = "<group>"; };
+		A66BD66F5EA8FDF6C880D1C8 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
+		B833D5D79E095299ADC434E2 /* SCPObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPObject.swift; sourceTree = "<group>"; };
+		BA3115B079E60F8292AEE903 /* SCPIncidentDoc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPIncidentDoc.swift; sourceTree = "<group>"; };
+		C385A57404BF418A4E191C3E /* SCPListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPListScreen.swift; sourceTree = "<group>"; };
+		D0A345616AB5CE426DD3CEE1 /* BriefingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefingScreen.swift; sourceTree = "<group>"; };
+		E12490D6F7FBB0F72F698DD3 /* SCPFoundationIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SCPFoundationIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5A51BE090A06902965E86A /* SCPStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPStoreTests.swift; sourceTree = "<group>"; };
+		EEBD441D58586A0C9F532D76 /* SCPDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCPDetailScreen.swift; sourceTree = "<group>"; };
+		F82EB6590F5544BFF998181C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FB9E0CA504C7DBA7F306DAC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		18C1521F0F34AEA3BA0E8583 /* iOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				FB9E0CA504C7DBA7F306DAC9 /* Assets.xcassets */,
+				9AB0CFD31CF3B05A3BD64A32 /* AuthStore.swift */,
+				43456867EC16219B5FBF7CF7 /* Info.plist */,
+				40D941804501A13296F5FDB0 /* SCPFoundationIOSApp.swift */,
+				B03062E27C7B82AA0AD4A9E0 /* LiveActivity */,
+				98200A3C4400AE2622C46F34 /* Views */,
+			);
+			name = iOSApp;
+			path = Sources/iOSApp;
+			sourceTree = "<group>";
+		};
+		2D35354FDC7B653C6E9138F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FDC2B31EA76BDFB379C4518 /* WatchRootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		549311A89D1E5A6C8396B5C3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EE5A51BE090A06902965E86A /* SCPStoreTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		71A9B6ED01E5BBC27C85087E /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				A36CCBE1E8C9507380EE5ECC /* ContainmentActivityWidget.swift */,
+				F82EB6590F5544BFF998181C /* Info.plist */,
+				22DF0A02F5A0F330273B2224 /* SCPFoundationWidgetsBundle.swift */,
+			);
+			name = Widgets;
+			path = Sources/Widgets;
+			sourceTree = "<group>";
+		};
+		98200A3C4400AE2622C46F34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				483696B6034470F86C969691 /* AuthorizationScreen.swift */,
+				D0A345616AB5CE426DD3CEE1 /* BriefingScreen.swift */,
+				85F21016A901419A2229BCC1 /* FavoritesScreen.swift */,
+				54FE98896368AC0E0AB354E0 /* IncidentsScreen.swift */,
+				42E349412C16911A995F39B8 /* IOSRootView.swift */,
+				08CE3243AD7B71365FB0AB0E /* ProfileScreen.swift */,
+				EEBD441D58586A0C9F532D76 /* SCPDetailScreen.swift */,
+				C385A57404BF418A4E191C3E /* SCPListScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A49AE35504D8B0B22C57223 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A66BD66F5EA8FDF6C880D1C8 /* AppLanguage.swift */,
+				70CA17125195B4F69DE49422 /* LiquidGlassKit.swift */,
+				BA3115B079E60F8292AEE903 /* SCPIncidentDoc.swift */,
+				B833D5D79E095299ADC434E2 /* SCPObject.swift */,
+				5F760A0CEDB7FF0E0CF4AC11 /* SCPRepository.swift */,
+				2893BD9094A0A68980082D40 /* SCPStore.swift */,
+			);
+			name = Shared;
+			path = Sources/Shared;
+			sourceTree = "<group>";
+		};
+		B03062E27C7B82AA0AD4A9E0 /* LiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				41C20C8C3B88155DC5F9E448 /* ContainmentActivityAttributes.swift */,
+				9C5DE84FA75FCE8324F00C0F /* ContainmentLiveActivityManager.swift */,
+			);
+			path = LiveActivity;
+			sourceTree = "<group>";
+		};
+		CE0C4D922F673F2D1FD041CC /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				252C6BD1A6BBB780C829C327 /* Info.plist */,
+				7535E264EB97C1ECC9CA15B1 /* SCPFoundationWatchApp.swift */,
+				2D35354FDC7B653C6E9138F4 /* Views */,
+			);
+			name = WatchApp;
+			path = Sources/WatchApp;
+			sourceTree = "<group>";
+		};
+		E358FD58388910093C8D34B1 = {
+			isa = PBXGroup;
+			children = (
+				18C1521F0F34AEA3BA0E8583 /* iOSApp */,
+				9A49AE35504D8B0B22C57223 /* Shared */,
+				549311A89D1E5A6C8396B5C3 /* Tests */,
+				CE0C4D922F673F2D1FD041CC /* WatchApp */,
+				71A9B6ED01E5BBC27C85087E /* Widgets */,
+				ECB650FA6221A326A6E78842 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECB650FA6221A326A6E78842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E12490D6F7FBB0F72F698DD3 /* SCPFoundationIOS.app */,
+				8AEF78A32D23F253B1E9579C /* SCPFoundationTests.xctest */,
+				55B78AF0256E1A875451369B /* SCPFoundationWatch.app */,
+				73D3207748BDC83C464CE97C /* SCPFoundationWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48D74A51D21AB750EC1A2D07 /* SCPFoundationWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B36E9278776ECA34DB8BC248 /* Build configuration list for PBXNativeTarget "SCPFoundationWatch" */;
+			buildPhases = (
+				C2E0459D8FD64FDECC9C4B50 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCPFoundationWatch;
+			packageProductDependencies = (
+			);
+			productName = SCPFoundationWatch;
+			productReference = 55B78AF0256E1A875451369B /* SCPFoundationWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		588FB523A3C09122B5358873 /* SCPFoundationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB433187F871F56FB3414A05 /* Build configuration list for PBXNativeTarget "SCPFoundationTests" */;
+			buildPhases = (
+				C87C6CEF0287E381E7AE0AC2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEBF952CCAEF1B80FF3CCC57 /* PBXTargetDependency */,
+			);
+			name = SCPFoundationTests;
+			packageProductDependencies = (
+			);
+			productName = SCPFoundationTests;
+			productReference = 8AEF78A32D23F253B1E9579C /* SCPFoundationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6A13E771294842DD72F9196 /* SCPFoundationWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0F66CB2A619447704A1FDFA /* Build configuration list for PBXNativeTarget "SCPFoundationWidgets" */;
+			buildPhases = (
+				837618B7241F64A5F1F0AD11 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCPFoundationWidgets;
+			packageProductDependencies = (
+			);
+			productName = SCPFoundationWidgets;
+			productReference = 73D3207748BDC83C464CE97C /* SCPFoundationWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EEA70C07E480D121F7D60C22 /* SCPFoundationIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD94E0A7874067469A86F015 /* Build configuration list for PBXNativeTarget "SCPFoundationIOS" */;
+			buildPhases = (
+				040C7DA74ACED9DE7ECA5331 /* Sources */,
+				79300FC4AD7956421BC0082C /* Resources */,
+				40159B5AD8D0069B1B329F39 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4367BDCC8A8FE13934704CB /* PBXTargetDependency */,
+			);
+			name = SCPFoundationIOS;
+			packageProductDependencies = (
+			);
+			productName = SCPFoundationIOS;
+			productReference = E12490D6F7FBB0F72F698DD3 /* SCPFoundationIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		682291C7BE9C87446C2ABDB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					48D74A51D21AB750EC1A2D07 = {
+						DevelopmentTeam = 75WT3FT4Z5;
+						ProvisioningStyle = Automatic;
+					};
+					588FB523A3C09122B5358873 = {
+						DevelopmentTeam = 75WT3FT4Z5;
+						ProvisioningStyle = Automatic;
+					};
+					A6A13E771294842DD72F9196 = {
+						DevelopmentTeam = 75WT3FT4Z5;
+						ProvisioningStyle = Automatic;
+					};
+					EEA70C07E480D121F7D60C22 = {
+						DevelopmentTeam = 75WT3FT4Z5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 34E88F38F42E60F0B17F78EE /* Build configuration list for PBXProject "SCPFoundation" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = E358FD58388910093C8D34B1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEA70C07E480D121F7D60C22 /* SCPFoundationIOS */,
+				588FB523A3C09122B5358873 /* SCPFoundationTests */,
+				48D74A51D21AB750EC1A2D07 /* SCPFoundationWatch */,
+				A6A13E771294842DD72F9196 /* SCPFoundationWidgets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79300FC4AD7956421BC0082C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA32C4F0B9E4D510FEA7A9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		040C7DA74ACED9DE7ECA5331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F227BBBD24E2BC47B5B9FF1 /* AppLanguage.swift in Sources */,
+				EBD4DB6ABD7066CE07423245 /* AuthStore.swift in Sources */,
+				B5EA2BA11B5D638F111356AE /* AuthorizationScreen.swift in Sources */,
+				302D86F941E1DF88C5A9A732 /* BriefingScreen.swift in Sources */,
+				7C5D6CBB0C1582C92D698AE3 /* ContainmentActivityAttributes.swift in Sources */,
+				8730BACB03B7AFDA64825EFC /* ContainmentLiveActivityManager.swift in Sources */,
+				45391A83B2B02DE16CE16A1B /* FavoritesScreen.swift in Sources */,
+				BFA6B5A70B8CF7EF4095CD46 /* IOSRootView.swift in Sources */,
+				C67E0FB8F709611F0F5FD170 /* IncidentsScreen.swift in Sources */,
+				5BEC41C68DD31A519BE700D2 /* LiquidGlassKit.swift in Sources */,
+				875D854C51765F4279901124 /* ProfileScreen.swift in Sources */,
+				B43F4EC0297E51324151F91F /* SCPDetailScreen.swift in Sources */,
+				C22445468BB761FE393E7171 /* SCPFoundationIOSApp.swift in Sources */,
+				F5B1B4CFDB262417EF515ADF /* SCPIncidentDoc.swift in Sources */,
+				0D91C7017540D0F6656FD0C9 /* SCPListScreen.swift in Sources */,
+				1463A6B12633693DE45D6188 /* SCPObject.swift in Sources */,
+				0BE143B06B3735589F98CBF7 /* SCPRepository.swift in Sources */,
+				0DDF5AEDEB6619C784ACA24E /* SCPStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837618B7241F64A5F1F0AD11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EAF97C0D39B6A4310E811B1 /* ContainmentActivityAttributes.swift in Sources */,
+				E6D842E2BBEA0A755177C3C9 /* ContainmentActivityWidget.swift in Sources */,
+				B9D5ED3A4A499AD49064540A /* SCPFoundationWidgetsBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2E0459D8FD64FDECC9C4B50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69BE6DAA7E69BDF64166B362 /* AppLanguage.swift in Sources */,
+				BA5E794202C15D6527932757 /* LiquidGlassKit.swift in Sources */,
+				0C205A068668040F93823A60 /* SCPFoundationWatchApp.swift in Sources */,
+				0C51EAA98F0ADF6D5E7793CF /* SCPIncidentDoc.swift in Sources */,
+				C760C2D121FF425E361F885B /* SCPObject.swift in Sources */,
+				E231D1E173DCADA1DC2EE574 /* SCPRepository.swift in Sources */,
+				05F8A7E520604F3142EAEBCD /* SCPStore.swift in Sources */,
+				72A4F2C92CF391C834AA4512 /* WatchRootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C87C6CEF0287E381E7AE0AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A0946A44C8E52B8EAE48BF /* SCPStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AEBF952CCAEF1B80FF3CCC57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEA70C07E480D121F7D60C22 /* SCPFoundationIOS */;
+			targetProxy = 1E05BA939F2555243764C85D /* PBXContainerItemProxy */;
+		};
+		E4367BDCC8A8FE13934704CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6A13E771294842DD72F9196 /* SCPFoundationWidgets */;
+			targetProxy = 7A852C6538B8497115CBDB89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		259CBABF7536BB8360EBE50F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75WT3FT4Z5;
+				INFOPLIST_FILE = Sources/Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egor.messenger.dictaphone.widgets;
+				PRODUCT_MODULE_NAME = SCPFoundationWidgets;
+				PRODUCT_NAME = SCPFoundationWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BA694B1401658B8081A9073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75WT3FT4Z5;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egor.messenger.dictaphone.tests;
+				PRODUCT_MODULE_NAME = SCPFoundationTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCPFoundationIOS.app/SCPFoundationIOS";
+			};
+			name = Debug;
+		};
+		5FD25FDD48665D99B97F79DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75WT3FT4Z5;
+				INFOPLIST_FILE = Sources/iOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egor.messenger.dictaphone;
+				PRODUCT_MODULE_NAME = SCPFoundationIOS;
+				PRODUCT_NAME = SCPFoundationIOS;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		759D1FD28386F5A86D43359F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75WT3FT4Z5;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egor.messenger.dictaphone.tests;
+				PRODUCT_MODULE_NAME = SCPFoundationTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCPFoundationIOS.app/SCPFoundationIOS";
+			};
+			name = Release;
+		};
+		828731656C0DEBAA984625C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75WT3FT4Z5;
+				INFOPLIST_FILE = Sources/iOSApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egor.messenger.dictaphone;
+				PRODUCT_MODULE_NAME = SCPFoundationIOS;
+				PRODUCT_NAME = SCPFoundationIOS;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B8B4847B6688149384DA9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		CB97AB064A7E1E61C1D99E43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75WT3FT4Z5;
+				INFOPLIST_FILE = Sources/Widgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.egor.messenger.dictaphone.widgets;
+				PRODUCT_MODULE_NAME = SCPFoundationWidgets;
+				PRODUCT_NAME = SCPFoundationWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D11678DED3967B8D7C7E1B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		D6758527EEDDE34E2352B3CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75WT3FT4Z5;
+				INFOPLIST_FILE = Sources/WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egor.messenger.dictaphone.watchapp;
+				PRODUCT_MODULE_NAME = SCPFoundationWatch;
+				PRODUCT_NAME = SCPFoundationWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		F17C72745F1FCF33AC8165B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75WT3FT4Z5;
+				INFOPLIST_FILE = Sources/WatchApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.egor.messenger.dictaphone.watchapp;
+				PRODUCT_MODULE_NAME = SCPFoundationWatch;
+				PRODUCT_NAME = SCPFoundationWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34E88F38F42E60F0B17F78EE /* Build configuration list for PBXProject "SCPFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11678DED3967B8D7C7E1B43 /* Debug */,
+				8B8B4847B6688149384DA9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B0F66CB2A619447704A1FDFA /* Build configuration list for PBXNativeTarget "SCPFoundationWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				259CBABF7536BB8360EBE50F /* Debug */,
+				CB97AB064A7E1E61C1D99E43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B36E9278776ECA34DB8BC248 /* Build configuration list for PBXNativeTarget "SCPFoundationWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17C72745F1FCF33AC8165B2 /* Debug */,
+				D6758527EEDDE34E2352B3CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DD94E0A7874067469A86F015 /* Build configuration list for PBXNativeTarget "SCPFoundationIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FD25FDD48665D99B97F79DC /* Debug */,
+				828731656C0DEBAA984625C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FB433187F871F56FB3414A05 /* Build configuration list for PBXNativeTarget "SCPFoundationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA694B1401658B8081A9073 /* Debug */,
+				759D1FD28386F5A86D43359F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 682291C7BE9C87446C2ABDB8 /* Project object */;
+}
