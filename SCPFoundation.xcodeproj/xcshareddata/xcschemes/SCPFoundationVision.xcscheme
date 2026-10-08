@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B862FBA1DED7B43BF05A8980"
+               BlueprintIdentifier = "C6A9F44CC89B35EC8E26B306"
                BuildableName = "SCPFoundationVision.app"
                BlueprintName = "SCPFoundationVision"
                ReferencedContainer = "container:SCPFoundation.xcodeproj">
@@ -40,6 +40,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C6A9F44CC89B35EC8E26B306"
+            BuildableName = "SCPFoundationVision.app"
+            BlueprintName = "SCPFoundationVision"
+            ReferencedContainer = "container:SCPFoundation.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

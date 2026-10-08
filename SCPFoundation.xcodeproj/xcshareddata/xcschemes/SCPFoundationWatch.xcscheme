@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A5B1E94B7D460C52A8E43AB7"
+               BlueprintIdentifier = "CF1451FF52F6CF7F7457B2DF"
                BuildableName = "SCPFoundationWatch.app"
                BlueprintName = "SCPFoundationWatch"
                ReferencedContainer = "container:SCPFoundation.xcodeproj">
@@ -40,6 +40,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "CF1451FF52F6CF7F7457B2DF"
+            BuildableName = "SCPFoundationWatch.app"
+            BlueprintName = "SCPFoundationWatch"
+            ReferencedContainer = "container:SCPFoundation.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "276C79D4398C20C6829C255D"
+               BlueprintIdentifier = "C30986F459D840492E6A471C"
                BuildableName = "SCPFoundationMac.app"
                BlueprintName = "SCPFoundationMac"
                ReferencedContainer = "container:SCPFoundation.xcodeproj">
@@ -40,6 +40,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C30986F459D840492E6A471C"
+            BuildableName = "SCPFoundationMac.app"
+            BlueprintName = "SCPFoundationMac"
+            ReferencedContainer = "container:SCPFoundation.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

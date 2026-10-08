@@ -273,10 +273,10 @@ final class SCPStore: ObservableObject {
                         shortDescription: shortDescription,
                         containmentProcedure: containmentProcedure,
                         incidentNotes: incidentNotes,
-                        authorName: item.createdBy ?? fallbackObject?.authorName,
-                        authorURLString: item.authorURLString
-                            ?? item.createdBy.map { "https://scp-wiki.wikidot.com/user:\($0)" }
-                            ?? fallbackObject?.authorURLString
+                        authorName: safeAuthorName(item.createdBy) ?? fallbackObject?.authorName,
+                        authorURLString: safeWikiURL(item.authorURLString)
+                            ?? item.createdBy.flatMap { safeWikiURL("https://scp-wiki.wikidot.com/user:\($0)") }
+                            ?? safeWikiURL(fallbackObject?.authorURLString)
                     )
                 }
 
@@ -288,11 +288,35 @@ final class SCPStore: ObservableObject {
     }
 
     private static func cleanedTitle(remoteTitle: String?, id: String, fallbackTitle: String?) -> String {
-        let trimmed = remoteTitle?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let trimmed = remoteTitle?
+            .filter { !$0.unicodeScalars.contains { $0.value < 0x20 || $0.value == 0x7F } }
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+            .prefix(240)
+            .description ?? ""
         if trimmed.isEmpty || trimmed.caseInsensitiveCompare(id) == .orderedSame {
             return fallbackTitle ?? id
         }
         return trimmed
+    }
+
+    private static func safeWikiURL(_ value: String?) -> String? {
+        guard let value,
+              let url = URL(string: value),
+              url.scheme == "https",
+              let host = url.host?.lowercased(),
+              host == "scp-wiki.wikidot.com" || host == "www.wikidot.com" else {
+            return nil
+        }
+        return url.absoluteString
+    }
+
+    private static func safeAuthorName(_ value: String?) -> String? {
+        guard let value else { return nil }
+        let clean = value
+            .filter { !$0.unicodeScalars.contains { $0.value < 0x20 || $0.value == 0x7F } }
+            .trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !clean.isEmpty else { return nil }
+        return String(clean.prefix(120))
     }
 
     private static func containmentClass(from tags: [String]?) -> SCPContainmentClass? {

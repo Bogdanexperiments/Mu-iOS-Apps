@@ -41,11 +41,17 @@ def add_sources(target, refs)
   refs.compact.each { |ref| target.source_build_phase.add_file_reference(ref) }
 end
 
-def add_scheme(root, name, target)
+def add_scheme(root, name, target, test_target = nil)
   scheme_dir = File.join(root, 'SCPFoundationApp.xcodeproj', 'xcshareddata', 'xcschemes')
   FileUtils.mkdir_p(scheme_dir)
   scheme = Xcodeproj::XCScheme.new
   scheme.add_build_target(target)
+  scheme.launch_action.buildable_product_runnable = Xcodeproj::XCScheme::BuildableProductRunnable.new(target)
+  if test_target
+    scheme.test_action.add_testable(
+      Xcodeproj::XCScheme::TestAction::TestableReference.new(test_target)
+    )
+  end
   scheme.launch_action.build_configuration = 'Debug'
   scheme.test_action.build_configuration = 'Debug'
   scheme.save_as(File.join(root, 'SCPFoundation.xcodeproj'), name, true)
@@ -129,7 +135,7 @@ end
 project.root_object.product_ref_group = root_group.new_group('Products')
 project.save
 
-add_scheme(root, 'SCPFoundationIOS', ios)
+add_scheme(root, 'SCPFoundationIOS', ios, tests)
 add_scheme(root, 'SCPFoundationMac', mac)
 add_scheme(root, 'SCPFoundationVision', vision)
 add_scheme(root, 'SCPFoundationWatch', a)
