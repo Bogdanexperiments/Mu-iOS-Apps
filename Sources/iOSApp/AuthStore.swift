@@ -17,8 +17,17 @@ final class AuthStore: ObservableObject {
     private let defaults: UserDefaults
     private let profileKey = "scp_worker_profile_v1"
     private let skipKey = "scp_worker_skip_v1"
-    private static let registrationURL = URL(string: "https://dummyjson.com/users/add")!
-    private static let loginURL = URL(string: "https://dummyjson.com/auth/login")!
+    private static var supabaseURL: URL? {
+        guard let raw = Bundle.main.object(forInfoDictionaryKey: "SUPABASE_URL") as? String,
+              !raw.isEmpty else { return nil }
+        return URL(string: raw)
+    }
+
+    private static var supabaseAnonKey: String? {
+        guard let value = Bundle.main.object(forInfoDictionaryKey: "SUPABASE_ANON_KEY") as? String,
+              !value.isEmpty else { return nil }
+        return value
+    }
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
@@ -52,15 +61,20 @@ final class AuthStore: ObservableObject {
             throw AuthStoreError.emptyPassword
         }
 
-        var request = URLRequest(url: Self.loginURL)
+        guard let supabaseURL = Self.supabaseURL,
+              let anonKey = Self.supabaseAnonKey else {
+            throw AuthStoreError.serverUnavailable
+        }
+
+        var request = URLRequest(url: supabaseURL.appendingPathComponent("auth/v1/token")
+            .appending(queryItems: [URLQueryItem(name: "grant_type", value: "password")]))
         request.httpMethod = "POST"
         request.timeoutInterval = 20
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(anonKey, forHTTPHeaderField: "apikey")
+        request.setValue("Bearer \(anonKey)", forHTTPHeaderField: "Authorization")
 
-        let payload = OnlineLoginPayload(
-            username: cleanedAccountID,
-            password: cleanedPassword
-        )
+        let payload = SupabasePasswordPayload(email: cleanedAccountID, password: cleanedPassword)
         request.httpBody = try JSONEncoder().encode(payload)
 
         do {
@@ -72,16 +86,10 @@ final class AuthStore: ObservableObject {
                 throw AuthStoreError.invalidCredentials
             }
 
-            let login = try JSONDecoder().decode(OnlineLoginResponse.self, from: data)
-            let fullName = [login.firstName, login.lastName]
-                .compactMap { $0?.trimmingCharacters(in: .whitespacesAndNewlines) }
-                .filter { !$0.isEmpty }
-                .joined(separator: " ")
-
             let profile = SCPWorkerProfile(
-                name: fullName.isEmpty ? cleanedAccountID : fullName,
-                email: login.email,
-                workerId: login.username?.isEmpty == false ? (login.username ?? cleanedAccountID) : cleanedAccountID,
+                name: cleanedAccountID,
+                email: cleanedAccountID,
+                workerId: cleanedAccountID,
                 department: "Не указано",
                 site: "Не указано",
                 clearance: .level2
@@ -110,30 +118,37 @@ final class AuthStore: ObservableObject {
             throw AuthStoreError.invalidEmail
         }
 
-        let nameParts = profile.name.split(separator: " ", maxSplits: 1).map(String.init)
-        let firstName = nameParts.first?.trimmingCharacters(in: .whitespacesAndNewlines)
-        let lastName = nameParts.count > 1 ? nameParts[1].trimmingCharacters(in: .whitespacesAndNewlines) : "SCP"
-
-        guard let firstName, !firstName.isEmpty else {
+        guard !profile.name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
             throw AuthStoreError.invalidName
         }
 
-        var request = URLRequest(url: Self.registrationURL)
+        guard let supabaseURL = Self.supabaseURL,
+              let anonKey = Self.supabaseAnonKey else {
+            throw AuthStoreError.serverUnavailable
+        }
+
+        var request = URLRequest(url: supabaseURL.appendingPathComponent("auth/v1/signup"))
         request.httpMethod = "POST"
         request.timeoutInterval = 20
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue(anonKey, forHTTPHeaderField: "apikey")
+        request.setValue("Bearer \(anonKey)", forHTTPHeaderField: "Authorization")
 
-        let payload = OnlineRegistrationPayload(
-            firstName: firstName,
-            lastName: lastName,
+        let payload = SupabaseSignupPayload(
             email: email,
-            username: profile.workerId.lowercased(),
-            password: cleanedPassword
+            password: cleanedPassword,
+            data: [
+                "display_name": profile.name,
+                "worker_id": profile.workerId,
+                "department": profile.department,
+                "site": profile.site,
+                "clearance": profile.clearance.rawValue
+            ]
         )
         request.httpBody = try JSONEncoder().encode(payload)
 
         do {
-            let (data, response) = try await URLSession.shared.data(for: request)
+            let (_, response) = try await URLSession.shared.data(for: request)
             guard let httpResponse = response as? HTTPURLResponse else {
                 throw AuthStoreError.serverUnavailable
             }
@@ -141,7 +156,6 @@ final class AuthStore: ObservableObject {
                 throw AuthStoreError.registrationRejected
             }
 
-            _ = try? JSONDecoder().decode(OnlineRegistrationResponse.self, from: data)
             register(profile: profile)
         } catch let error as AuthStoreError {
             throw error
@@ -181,28 +195,15 @@ final class AuthStore: ObservableObject {
     }
 }
 
-private struct OnlineRegistrationPayload: Codable {
-    let firstName: String
-    let lastName: String
+private struct SupabaseSignupPayload: Codable {
     let email: String
-    let username: String
     let password: String
+    let data: [String: String]
 }
 
-private struct OnlineRegistrationResponse: Codable {
-    let id: Int?
-}
-
-private struct OnlineLoginPayload: Codable {
-    let username: String
+private struct SupabasePasswordPayload: Codable {
+    let email: String
     let password: String
-}
-
-private struct OnlineLoginResponse: Codable {
-    let firstName: String?
-    let lastName: String?
-    let username: String?
-    let email: String?
 }
 
 enum AuthStoreError: LocalizedError {

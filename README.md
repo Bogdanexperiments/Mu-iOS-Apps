@@ -9,7 +9,11 @@ SwiftUI-проект на основе рабочего кода `Bogdanexperime
 - visionOS 2+ / Apple Vision Pro — схема `SCPFoundationVision`
 - watchOS 10+ — схема `SCPFoundationWatch`
 
-Для macOS и visionOS добавлено отдельное desktop-пространство с каталогом объектов, выбором SCP, описанием, классом содержания и зоной. Общие модели и `SCPStore` переиспользуются между платформами.
+Для macOS и visionOS добавлено отдельное desktop-пространство с каталогом объектов, выбором SCP, описанием, классом содержания и зоной. Общие модели и `SCPStore` переиспользуются между платформами. В detail screen отображаются автор и ссылка на его страницу, если они есть в online metadata.
+
+В карточке аномалии работает цветное свечение класса: Safe — зелёное, Euclid — жёлтое, Keter — красное, Thaumiel — синее.
+
+В проект также входят выбор фото профиля через PhotosPicker, O5 deep-link registration и `Backend/supabase_schema.sql` для онлайн-хранения аккаунтов, аватаров, каталога metadata и приглашений O5. Первый приглашённый адрес в схеме — `ioiopiphone@icloud.com`.
 
 ## Первый запуск на Mac
 
@@ -31,6 +35,6 @@ open SCPFoundation.xcodeproj
 
 Для iOS выбери `SCPFoundationIOS` и iPhone Simulator. Для watchOS используй `SCPFoundationWatch` только с Apple Watch Simulator; не запускай watchOS-схему на `My Mac`.
 
-## Ограничение текущей среды
+## Важно
 
-Linux-среда не содержит Apple SDK и не может выполнить `xcodebuild` или сгенерировать macOS-native проект. Поэтому `project.yml` является источником истины для новых macOS/visionOS targets; `GENERATE_PROJECT.sh` пересоздаёт `.xcodeproj` непосредственно на Mac с установленными Xcode и XcodeGen.
+Открывать нужно именно готовый `SCPFoundation.xcodeproj` в корне. Он пересоздан с нуля и фактически содержит iOS, WidgetKit, watchOS, macOS, visionOS и test targets. `project.yml` и `GENERATE_PROJECT.sh` оставлены для повторной генерации на Mac с установленными XcodeGen и Xcode.

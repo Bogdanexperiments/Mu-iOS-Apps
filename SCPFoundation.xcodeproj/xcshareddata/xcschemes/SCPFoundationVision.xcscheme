@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5839FA2A18B1FF0A104C74B4"
-               BuildableName = "SCPFoundationIOS.app"
-               BlueprintName = "SCPFoundationIOS"
+               BlueprintIdentifier = "B862FBA1DED7B43BF05A8980"
+               BuildableName = "SCPFoundationVision.app"
+               BlueprintName = "SCPFoundationVision"
                ReferencedContainer = "container:SCPFoundation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

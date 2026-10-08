@@ -58,6 +58,16 @@ private struct SCPDesktopCatalogView: View {
                                 .foregroundStyle(object.containmentClass.glowColor)
                                 .font(.headline)
                             Label(object.zone.rawValue, systemImage: "map")
+                            if let authorName = object.authorName {
+                                if let authorURLString = object.authorURLString,
+                                   let authorURL = URL(string: authorURLString) {
+                                    Link(destination: authorURL) {
+                                        Label("Автор: \(authorName)", systemImage: "person.text.rectangle")
+                                    }
+                                } else {
+                                    Label("Автор: \(authorName)", systemImage: "person.text.rectangle")
+                                }
+                            }
                             Divider()
                             Text("Описание").font(.headline)
                             Text(object.shortDescription)

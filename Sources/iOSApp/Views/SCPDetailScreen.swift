@@ -19,6 +19,16 @@ struct SCPDetailScreen: View {
                     Label("\(object.containmentClass.rawValue) (\(object.containmentClass.description))", systemImage: "lock.shield")
                         .foregroundStyle(object.containmentClass.glowColor)
                     Label(object.clearanceLevel.rawValue, systemImage: "person.badge.key")
+                    if let authorName = object.authorName {
+                        if let authorURLString = object.authorURLString,
+                           let authorURL = URL(string: authorURLString) {
+                            Link(destination: authorURL) {
+                                Label("Автор: \(authorName)", systemImage: "person.text.rectangle")
+                            }
+                        } else {
+                            Label("Автор: \(authorName)", systemImage: "person.text.rectangle")
+                        }
+                    }
                 }
                 .liquidGlassCard(cornerRadius: 18)
                 .scpClassGlow(object.containmentClass)

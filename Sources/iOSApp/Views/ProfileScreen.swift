@@ -1,8 +1,11 @@
 import SwiftUI
+import PhotosUI
 
 struct ProfileScreen: View {
     @EnvironmentObject private var auth: AuthStore
     @StateObject private var linkStore = O5RegistrationLinkStore()
+    @StateObject private var avatarStore = ProfileAvatarStore()
+    @State private var selectedPhoto: PhotosPickerItem?
 
     var body: some View {
         ZStack {
@@ -50,8 +53,19 @@ struct ProfileScreen: View {
     @ViewBuilder
     private func profileCard(_ profile: SCPWorkerProfile) -> some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(profile.name)
-                .font(.title2.bold())
+            HStack(spacing: 14) {
+                PhotosPicker(selection: $selectedPhoto, matching: .images) {
+                    ProfileAvatarView(imageData: avatarStore.imageData, size: 76)
+                }
+                .buttonStyle(.plain)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(profile.name)
+                        .font(.title2.bold())
+                    Text("Нажми на фото, чтобы изменить")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+            }
             if let email = profile.email, !email.isEmpty {
                 Text("Email: \(email)")
             }
@@ -61,6 +75,14 @@ struct ProfileScreen: View {
             Text("Допуск: \(profile.clearance.rawValue)")
         }
         .liquidGlassCard()
+        .onChange(of: selectedPhoto) { _, item in
+            guard let item else { return }
+            Task {
+                if let data = try? await item.loadTransferable(type: Data.self) {
+                    await MainActor.run { avatarStore.save(data) }
+                }
+            }
+        }
     }
 }
 

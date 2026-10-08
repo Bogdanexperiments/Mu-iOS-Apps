@@ -272,7 +272,11 @@ final class SCPStore: ObservableObject {
                         zone: fallbackObject?.zone,
                         shortDescription: shortDescription,
                         containmentProcedure: containmentProcedure,
-                        incidentNotes: incidentNotes
+                        incidentNotes: incidentNotes,
+                        authorName: item.createdBy ?? fallbackObject?.authorName,
+                        authorURLString: item.authorURLString
+                            ?? item.createdBy.map { "https://scp-wiki.wikidot.com/user:\($0)" }
+                            ?? fallbackObject?.authorURLString
                     )
                 }
 
@@ -328,4 +332,13 @@ final class SCPStore: ObservableObject {
 private struct RemoteIndexItem: Decodable {
     let title: String?
     let tags: [String]?
+    let createdBy: String?
+    let authorURLString: String?
+
+    enum CodingKeys: String, CodingKey {
+        case title
+        case tags
+        case createdBy = "created_by"
+        case authorURLString = "created_by_url"
+    }
 }

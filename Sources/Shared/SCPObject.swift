@@ -76,6 +76,8 @@ struct SCPObject: Identifiable, Codable, Hashable {
     let shortDescription: String
     let containmentProcedure: String
     let incidentNotes: [String]
+    let authorName: String?
+    let authorURLString: String?
 
     init(
         id: String,
@@ -85,7 +87,9 @@ struct SCPObject: Identifiable, Codable, Hashable {
         zone: SCPZone? = nil,
         shortDescription: String,
         containmentProcedure: String,
-        incidentNotes: [String]
+        incidentNotes: [String],
+        authorName: String? = nil,
+        authorURLString: String? = nil
     ) {
         self.id = id
         self.title = title
@@ -95,6 +99,8 @@ struct SCPObject: Identifiable, Codable, Hashable {
         self.shortDescription = shortDescription
         self.containmentProcedure = containmentProcedure
         self.incidentNotes = incidentNotes
+        self.authorName = authorName
+        self.authorURLString = authorURLString
     }
 }
 // MARK: - Расширенные отчёты каталога
