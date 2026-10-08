@@ -96,7 +96,10 @@ final class AuthStore: ObservableObject {
         }
     }
 
-    func registerOnline(profile: SCPWorkerProfile, password: String) async throws {
+    func registerOnline(profile: SCPWorkerProfile, password: String, allowO5Invite: Bool = false) async throws {
+        if profile.clearance == .level5 && !allowO5Invite {
+            throw AuthStoreError.o5LinkRequired
+        }
         let cleanedPassword = password.trimmingCharacters(in: .whitespacesAndNewlines)
         guard cleanedPassword.count >= 6 else {
             throw AuthStoreError.weakPassword
@@ -212,6 +215,7 @@ enum AuthStoreError: LocalizedError {
     case serverUnavailable
     case registrationRejected
     case networkFailure
+    case o5LinkRequired
 
     var errorDescription: String? {
         switch self {
@@ -233,6 +237,101 @@ enum AuthStoreError: LocalizedError {
             return "Регистрация отклонена сервером."
         case .networkFailure:
             return "Ошибка сети. Проверь интернет и попробуй ещё раз."
+        case .o5LinkRequired:
+            return "Для допуска O5 нужна действующая уникальная ссылка администратора."
         }
+    }
+}
+
+
+// MARK: - O5 registration links
+
+struct O5RegistrationLink: Codable, Identifiable, Hashable {
+    let id: UUID
+    let token: String
+    let createdAt: Date
+    let expiresAt: Date
+    let issuedBy: String
+    var usedAt: Date?
+
+    var isExpired: Bool { Date() >= expiresAt }
+    var isUsable: Bool { usedAt == nil && !isExpired }
+    var url: URL {
+        var components = URLComponents()
+        components.scheme = "scpfoundation"
+        components.host = "admin"
+        components.path = "/register"
+        components.queryItems = [URLQueryItem(name: "token", value: token)]
+        return components.url!
+    }
+}
+
+@MainActor
+final class O5RegistrationLinkStore: ObservableObject {
+    @Published private(set) var links: [O5RegistrationLink] = []
+
+    private let defaults: UserDefaults
+    private let storageKey = "scp_o5_registration_links_v1"
+    private let lifetime: TimeInterval = 15 * 60
+
+    init(defaults: UserDefaults = .standard) {
+        self.defaults = defaults
+        self.links = Self.load(defaults: defaults, key: storageKey)
+    }
+
+    var activeLinks: [O5RegistrationLink] {
+        links.filter(\.isUsable)
+    }
+
+    func issueLink(issuedBy profile: SCPWorkerProfile) -> O5RegistrationLink? {
+        guard profile.clearance == .level5 else { return nil }
+        let now = Date()
+        let link = O5RegistrationLink(
+            id: UUID(),
+            token: Self.secureToken(),
+            createdAt: now,
+            expiresAt: now.addingTimeInterval(lifetime),
+            issuedBy: profile.workerId,
+            usedAt: nil
+        )
+        links.insert(link, at: 0)
+        save()
+        return link
+    }
+
+    func consume(token: String) -> O5RegistrationLink? {
+        guard let index = links.firstIndex(where: { $0.token == token && $0.isUsable }) else {
+            return nil
+        }
+        links[index].usedAt = Date()
+        save()
+        return links[index]
+    }
+
+    func link(for token: String) -> O5RegistrationLink? {
+        links.first { $0.token == token && $0.isUsable }
+    }
+
+    func revoke(_ link: O5RegistrationLink) {
+        links.removeAll { $0.id == link.id }
+        save()
+    }
+
+    private func save() {
+        guard let data = try? JSONEncoder().encode(links) else { return }
+        defaults.set(data, forKey: storageKey)
+    }
+
+    private static func load(defaults: UserDefaults, key: String) -> [O5RegistrationLink] {
+        guard let data = defaults.data(forKey: key),
+              let decoded = try? JSONDecoder().decode([O5RegistrationLink].self, from: data) else {
+            return []
+        }
+        return decoded
+    }
+
+    private static func secureToken() -> String {
+        UUID().uuidString.replacingOccurrences(of: "-", with: "")
+            + UUID().uuidString.replacingOccurrences(of: "-", with: "")
     }
 }

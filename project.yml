@@ -2,6 +2,8 @@ name: SCPFoundation
 options:
   deploymentTarget:
     iOS: '18.0'
+    macOS: '14.0'
+    visionOS: '2.0'
     watchOS: '10.0'
 settings:
   base:
@@ -24,6 +26,10 @@ targets:
         UILaunchScreen: {}
         NSSupportsLiveActivities: true
         NSSupportsLiveActivitiesFrequentUpdates: true
+        CFBundleURLTypes:
+          - CFBundleURLName: SCP Foundation admin registration
+            CFBundleURLSchemes:
+              - scpfoundation
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.egor.messenger.dictaphone
@@ -75,6 +81,42 @@ targets:
         DEVELOPMENT_TEAM: 75WT3FT4Z5
         SKIP_INSTALL: YES
 
+  SCPFoundationMac:
+    type: application
+    platform: macOS
+    sources:
+      - Sources/Shared
+      - Sources/PlatformSupport
+      - Sources/MacApp
+    info:
+      path: Sources/MacApp/Info.plist
+      properties:
+        CFBundleDisplayName: SCP Foundation
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.egor.messenger.dictaphone.mac
+        PRODUCT_NAME: SCPFoundationMac
+        PRODUCT_MODULE_NAME: SCPFoundationMac
+        CODE_SIGN_STYLE: Automatic
+
+  SCPFoundationVision:
+    type: application
+    platform: visionOS
+    sources:
+      - Sources/Shared
+      - Sources/PlatformSupport
+      - Sources/VisionApp
+    info:
+      path: Sources/VisionApp/Info.plist
+      properties:
+        CFBundleDisplayName: SCP Foundation Vision
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.egor.messenger.dictaphone.vision
+        PRODUCT_NAME: SCPFoundationVision
+        PRODUCT_MODULE_NAME: SCPFoundationVision
+        CODE_SIGN_STYLE: Automatic
+
   SCPFoundationTests:
     type: bundle.unit-test
     platform: iOS
@@ -106,3 +148,13 @@ schemes:
     build:
       targets:
         SCPFoundationWatch: all
+
+  SCPFoundationMac:
+    build:
+      targets:
+        SCPFoundationMac: all
+
+  SCPFoundationVision:
+    build:
+      targets:
+        SCPFoundationVision: all

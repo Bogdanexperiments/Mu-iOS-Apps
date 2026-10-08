@@ -69,7 +69,7 @@ struct AuthorizationScreen: View {
                             SecureField("Повтори пароль", text: $passwordRepeat)
 
                             Picker("Уровень допуска", selection: $clearance) {
-                                ForEach(SCPClearanceLevel.allCases, id: \.self) { level in
+                                ForEach(SCPClearanceLevel.allCases.filter { $0 != .level5 }, id: \.self) { level in
                                     Text(level.rawValue).tag(level)
                                 }
                             }
