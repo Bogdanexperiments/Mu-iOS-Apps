@@ -55,6 +55,8 @@ private struct SCPDesktopCatalogView: View {
                             Text(object.id).font(.title.bold().monospaced())
                             Text(object.title).font(.title2)
                             Label(object.containmentClass.rawValue, systemImage: "lock.shield")
+                                .foregroundStyle(object.containmentClass.glowColor)
+                                .font(.headline)
                             Label(object.zone.rawValue, systemImage: "map")
                             Divider()
                             Text("Описание").font(.headline)
@@ -79,6 +81,7 @@ private struct SCPDesktopCatalogView: View {
                         .padding(24)
                     }
                     .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 20))
+                    .scpClassGlow(object.containmentClass)
                 } else {
                     ContentUnavailableView("Выбери объект", systemImage: "circle.dashed")
                         .frame(maxWidth: .infinity, maxHeight: .infinity)

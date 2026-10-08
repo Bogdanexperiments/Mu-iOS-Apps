@@ -123,3 +123,47 @@ extension View {
         )
     }
 }
+
+extension SCPContainmentClass {
+    var glowColor: Color {
+        switch self {
+        case .safe:
+            return .green
+        case .euclid:
+            return .yellow
+        case .keter:
+            return .red
+        case .thaumiel:
+            return .blue
+        }
+    }
+
+    var glowLabel: String {
+        switch self {
+        case .safe: return "Зелёное свечение"
+        case .euclid: return "Жёлтое свечение"
+        case .keter: return "Красное свечение"
+        case .thaumiel: return "Синее свечение"
+        }
+    }
+}
+
+private struct SCPClassGlowModifier: ViewModifier {
+    let containmentClass: SCPContainmentClass
+
+    func body(content: Content) -> some View {
+        content
+            .overlay {
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    .stroke(containmentClass.glowColor.opacity(0.82), lineWidth: 1.5)
+                    .shadow(color: containmentClass.glowColor.opacity(0.78), radius: 13)
+                    .shadow(color: containmentClass.glowColor.opacity(0.34), radius: 28)
+            }
+    }
+}
+
+extension View {
+    func scpClassGlow(_ containmentClass: SCPContainmentClass) -> some View {
+        modifier(SCPClassGlowModifier(containmentClass: containmentClass))
+    }
+}

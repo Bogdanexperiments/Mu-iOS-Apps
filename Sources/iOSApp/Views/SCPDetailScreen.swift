@@ -17,9 +17,11 @@ struct SCPDetailScreen: View {
                         .font(.title3)
                     Label(object.zone.rawValue, systemImage: "map")
                     Label("\(object.containmentClass.rawValue) (\(object.containmentClass.description))", systemImage: "lock.shield")
+                        .foregroundStyle(object.containmentClass.glowColor)
                     Label(object.clearanceLevel.rawValue, systemImage: "person.badge.key")
                 }
                 .liquidGlassCard(cornerRadius: 18)
+                .scpClassGlow(object.containmentClass)
 
                 section(title: "Кратко", text: object.shortDescription)
                 section(title: "Процедура содержания", text: object.containmentProcedure)
