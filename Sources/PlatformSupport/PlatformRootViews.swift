@@ -61,6 +61,19 @@ private struct SCPDesktopCatalogView: View {
                             Text(object.shortDescription)
                             Text("Процедуры содержания").font(.headline)
                             Text(object.containmentProcedure)
+                            if let report = object.fullReport {
+                                Divider()
+                                Text("Полный отчёт").font(.title2.bold())
+                                desktopReportSection("Обзор", report.overview)
+                                desktopReportSection("Аномальные свойства", report.anomalousProperties)
+                                desktopReportSection("Обоснование содержания", report.containmentRationale)
+                                desktopReportSection("Оценка риска", report.riskAssessment)
+                                desktopReportSection("Операционная история", report.operationalHistory)
+                                if let sourceURL = report.sourceURL {
+                                    Link("Первоисточник на SCP Wiki", destination: sourceURL)
+                                        .font(.caption.weight(.semibold))
+                                }
+                            }
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(24)
@@ -73,5 +86,12 @@ private struct SCPDesktopCatalogView: View {
             }
         }
         .padding(24)
+    }
+
+    private func desktopReportSection(_ title: String, _ text: String) -> some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(title).font(.headline)
+            Text(text)
+        }
     }
 }

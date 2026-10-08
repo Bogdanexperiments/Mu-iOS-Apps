@@ -24,6 +24,25 @@ struct SCPDetailScreen: View {
                 section(title: "Кратко", text: object.shortDescription)
                 section(title: "Процедура содержания", text: object.containmentProcedure)
 
+                if let report = object.fullReport {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Полный отчёт объекта")
+                            .font(.title2.bold())
+                        reportSection(title: "Обзор", text: report.overview)
+                        reportSection(title: "Аномальные свойства", text: report.anomalousProperties)
+                        reportSection(title: "Обоснование содержания", text: report.containmentRationale)
+                        reportSection(title: "Оценка риска", text: report.riskAssessment)
+                        reportSection(title: "Операционная история", text: report.operationalHistory)
+                        if let sourceURL = report.sourceURL {
+                            Link(destination: sourceURL) {
+                                Label("Первоисточник на SCP Wiki", systemImage: "link")
+                            }
+                            .font(.caption.weight(.semibold))
+                        }
+                    }
+                    .liquidGlassCard(cornerRadius: 16)
+                }
+
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Заметки об инцидентах")
                         .font(.headline)
@@ -114,5 +133,14 @@ struct SCPDetailScreen: View {
                 .font(.body)
         }
         .liquidGlassCard(cornerRadius: 16)
+    }
+
+    private func reportSection(title: String, text: String) -> some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(title)
+                .font(.headline)
+            Text(text)
+                .font(.body)
+        }
     }
 }
