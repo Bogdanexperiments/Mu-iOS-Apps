@@ -167,3 +167,113 @@ extension View {
         modifier(SCPClassGlowModifier(containmentClass: containmentClass))
     }
 }
+
+
+// MARK: - SCP danger highlight feature
+
+enum SCPDangerClass: String, CaseIterable, Identifiable {
+    case safe = "Safe"
+    case euclid = "Euclid"
+    case keter = "Keter"
+    case thaumiel = "Thaumiel"
+
+    var id: String { rawValue }
+
+    var russianName: String {
+        switch self {
+        case .safe: return "Безопасный"
+        case .euclid: return "Евклид"
+        case .keter: return "Кетер"
+        case .thaumiel: return "Таумиель"
+        }
+    }
+
+    var color: Color {
+        switch self {
+        case .safe: return .green
+        case .euclid: return .yellow
+        case .keter: return .red
+        case .thaumiel: return .blue
+        }
+    }
+
+    var backgroundColor: Color { color.opacity(0.12) }
+    var borderColor: Color { color.opacity(0.55) }
+
+    var glowRadius: CGFloat {
+        switch self {
+        case .safe: return 8
+        case .euclid: return 10
+        case .keter: return 14
+        case .thaumiel: return 11
+        }
+    }
+
+    static func from(_ value: String) -> SCPDangerClass {
+        switch value.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() {
+        case "safe", "безопасный", "безопасно": return .safe
+        case "euclid", "евклид": return .euclid
+        case "keter", "кетер": return .keter
+        case "thaumiel", "таумиель": return .thaumiel
+        default: return .safe
+        }
+    }
+
+    static func from(_ containmentClass: SCPContainmentClass) -> SCPDangerClass {
+        switch containmentClass {
+        case .safe: return .safe
+        case .euclid: return .euclid
+        case .keter: return .keter
+        case .thaumiel: return .thaumiel
+        }
+    }
+}
+
+struct SCPDangerHighlightModifier: ViewModifier {
+    let dangerClass: SCPDangerClass
+
+    func body(content: Content) -> some View {
+        content
+            .background(
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    .fill(dangerClass.backgroundColor)
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
+                    .stroke(dangerClass.borderColor, lineWidth: 1)
+            )
+            .shadow(
+                color: dangerClass.color.opacity(0.32),
+                radius: dangerClass.glowRadius,
+                x: 0,
+                y: 0
+            )
+    }
+}
+
+extension View {
+    func scpDangerHighlight(_ dangerClass: SCPDangerClass) -> some View {
+        modifier(SCPDangerHighlightModifier(dangerClass: dangerClass))
+    }
+}
+
+struct SCPDangerBadge: View {
+    let dangerClass: SCPDangerClass
+
+    var body: some View {
+        HStack(spacing: 6) {
+            Circle()
+                .fill(dangerClass.color)
+                .frame(width: 7, height: 7)
+                .shadow(color: dangerClass.color.opacity(0.8), radius: 4)
+
+            Text(dangerClass.russianName)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(dangerClass.color)
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 6)
+        .background(Capsule().fill(dangerClass.backgroundColor))
+        .overlay(Capsule().stroke(dangerClass.borderColor, lineWidth: 1))
+    }
+}

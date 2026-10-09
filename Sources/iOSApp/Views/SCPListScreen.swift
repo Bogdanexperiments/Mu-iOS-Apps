@@ -57,6 +57,7 @@ struct SCPListScreen: View {
                                 isPadLayout: isPadLayout
                             )
                             .liquidGlassCard(cornerRadius: 14, horizontalPadding: 12, verticalPadding: 10)
+                            .scpDangerHighlight(.from(object.containmentClass))
                         }
                         .listRowBackground(Color.clear)
                         .listRowSeparator(.hidden)
@@ -128,10 +129,12 @@ private struct SCPRow: View {
                     Image(systemName: "star.fill")
                         .foregroundStyle(.yellow)
                 }
+                Spacer()
+                SCPDangerBadge(dangerClass: .from(object.containmentClass))
             }
             Text(object.title)
                 .font(isPadLayout ? .title3 : .subheadline)
-            Text("\(object.zone.rawValue) • \(object.containmentClass.rawValue) • \(object.clearanceLevel.rawValue)")
+            Text("\(object.zone.rawValue) • \(object.clearanceLevel.rawValue)")
                 .font(isPadLayout ? .body : .caption)
                 .foregroundStyle(.secondary)
         }

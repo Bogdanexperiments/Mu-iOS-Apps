@@ -43,8 +43,10 @@ private struct SCPDesktopCatalogView: View {
                         Text(object.id).font(.headline.monospaced())
                         Text(object.title).font(.subheadline)
                         Text(object.zone.rawValue).font(.caption).foregroundStyle(.secondary)
+                        SCPDangerBadge(dangerClass: .from(object.containmentClass))
                     }
                     .padding(.vertical, 5)
+                    .scpDangerHighlight(.from(object.containmentClass))
                 }
                 .frame(minWidth: 330)
 
@@ -57,6 +59,7 @@ private struct SCPDesktopCatalogView: View {
                             Label(object.containmentClass.rawValue, systemImage: "lock.shield")
                                 .foregroundStyle(object.containmentClass.glowColor)
                                 .font(.headline)
+                            SCPDangerBadge(dangerClass: .from(object.containmentClass))
                             Label(object.zone.rawValue, systemImage: "map")
                             if let authorName = object.authorName {
                                 if let authorURLString = object.authorURLString,
@@ -91,6 +94,7 @@ private struct SCPDesktopCatalogView: View {
                         .padding(24)
                     }
                     .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 20))
+                    .scpDangerHighlight(.from(object.containmentClass))
                     .scpClassGlow(object.containmentClass)
                 } else {
                     ContentUnavailableView("Выбери объект", systemImage: "circle.dashed")

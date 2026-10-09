@@ -18,6 +18,7 @@ struct SCPDetailScreen: View {
                     Label(object.zone.rawValue, systemImage: "map")
                     Label("\(object.containmentClass.rawValue) (\(object.containmentClass.description))", systemImage: "lock.shield")
                         .foregroundStyle(object.containmentClass.glowColor)
+                    SCPDangerBadge(dangerClass: .from(object.containmentClass))
                     Label(object.clearanceLevel.rawValue, systemImage: "person.badge.key")
                     if let authorName = object.authorName {
                         if let authorURLString = object.authorURLString,
@@ -31,6 +32,7 @@ struct SCPDetailScreen: View {
                     }
                 }
                 .liquidGlassCard(cornerRadius: 18)
+                .scpDangerHighlight(.from(object.containmentClass))
                 .scpClassGlow(object.containmentClass)
 
                 section(title: "Кратко", text: object.shortDescription)

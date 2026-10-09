@@ -43,6 +43,14 @@ final class SCPStoreTests: XCTestCase {
         XCTAssertTrue(SCPIncidentRepository.docs.allSatisfy { $0.sourceURL != nil })
     }
 
+    func testDangerClassMappingSupportsEnglishAndRussianNames() {
+        XCTAssertEqual(SCPDangerClass.from("Safe"), .safe)
+        XCTAssertEqual(SCPDangerClass.from("Евклид"), .euclid)
+        XCTAssertEqual(SCPDangerClass.from("keter"), .keter)
+        XCTAssertEqual(SCPDangerClass.from("Таумиель"), .thaumiel)
+        XCTAssertEqual(SCPDangerClass.from(SCPContainmentClass.safe), .safe)
+    }
+
     private func makeStore() -> SCPStore {
         let defaults = UserDefaults(suiteName: "SCPStoreTests-\(UUID().uuidString)")!
         defaults.removePersistentDomain(forName: defaultsSuiteName(defaults))
