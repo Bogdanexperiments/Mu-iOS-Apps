@@ -17,15 +17,13 @@ SwiftUI-проект на основе рабочего кода `Bogdanexperime
 
 ## Первый запуск на Mac
 
-В терминале macOS из корня проекта:
+Готовый проект открывается напрямую — регенерация не требуется:
 
 ```bash
-brew install xcodegen
-./GENERATE_PROJECT.sh
 open SCPFoundation.xcodeproj
 ```
 
-После генерации в Xcode доступны схемы `SCPFoundationMac` и `SCPFoundationVision`.
+В Xcode доступны схемы `SCPFoundationMac` и `SCPFoundationVision`. `GENERATE_CLEAN_XCODEPROJ.rb` и `project.yml` оставлены только для воспроизводимой регенерации.
 
 ## Запуск
 

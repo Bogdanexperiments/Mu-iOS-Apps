@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B738453F4E5DD216252168D9"
+               BlueprintIdentifier = "EA250B7A5D5B114F632F7DCF"
                BuildableName = "SCPFoundationIOS.app"
                BlueprintName = "SCPFoundationIOS"
                ReferencedContainer = "container:SCPFoundation.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "869898DF00D3C9F1F438DBDD"
+               BlueprintIdentifier = "ADE5CCB137E74B4A0BF62506"
                BuildableName = "SCPFoundationTests.xctest"
                BlueprintName = "SCPFoundationTests"
                ReferencedContainer = "container:SCPFoundation.xcodeproj">
@@ -53,7 +53,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B738453F4E5DD216252168D9"
+            BlueprintIdentifier = "EA250B7A5D5B114F632F7DCF"
             BuildableName = "SCPFoundationIOS.app"
             BlueprintName = "SCPFoundationIOS"
             ReferencedContainer = "container:SCPFoundation.xcodeproj">

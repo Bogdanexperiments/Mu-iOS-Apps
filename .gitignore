@@ -1,0 +1,11 @@
+# Xcode user state and local build output
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# Local-only Supabase configuration
+Backend/SupabaseConfig.plist
+
+# macOS metadata
+.DS_Store

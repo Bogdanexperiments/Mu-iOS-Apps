@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C6A9F44CC89B35EC8E26B306"
+               BlueprintIdentifier = "6779166A82B10E8D4CF62F6C"
                BuildableName = "SCPFoundationVision.app"
                BlueprintName = "SCPFoundationVision"
                ReferencedContainer = "container:SCPFoundation.xcodeproj">
@@ -43,7 +43,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C6A9F44CC89B35EC8E26B306"
+            BlueprintIdentifier = "6779166A82B10E8D4CF62F6C"
             BuildableName = "SCPFoundationVision.app"
             BlueprintName = "SCPFoundationVision"
             ReferencedContainer = "container:SCPFoundation.xcodeproj">

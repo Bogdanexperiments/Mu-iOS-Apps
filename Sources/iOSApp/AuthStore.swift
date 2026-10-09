@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 struct SCPWorkerProfile: Codable, Hashable {
     let name: String

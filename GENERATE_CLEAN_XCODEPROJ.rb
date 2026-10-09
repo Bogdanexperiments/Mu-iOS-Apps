@@ -41,8 +41,12 @@ def add_sources(target, refs)
   refs.compact.each { |ref| target.source_build_phase.add_file_reference(ref) }
 end
 
+def add_resources(target, refs)
+  refs.compact.each { |ref| target.resources_build_phase.add_file_reference(ref) }
+end
+
 def add_scheme(root, name, target, test_target = nil)
-  scheme_dir = File.join(root, 'SCPFoundationApp.xcodeproj', 'xcshareddata', 'xcschemes')
+  scheme_dir = File.join(root, 'SCPFoundation.xcodeproj', 'xcshareddata', 'xcschemes')
   FileUtils.mkdir_p(scheme_dir)
   scheme = Xcodeproj::XCScheme.new
   scheme.add_build_target(target)
@@ -89,6 +93,12 @@ test_refs = add_files(project, tests_group, root, test_files)
 ios = project.new_target(:application, 'SCPFoundationIOS', :ios, '18.0')
 set_common(ios, settings.merge('PRODUCT_BUNDLE_IDENTIFIER' => 'com.foundation.scp.app', 'PRODUCT_NAME' => 'SCPFoundationIOS', 'INFOPLIST_FILE' => 'Sources/iOSApp/Info.plist', 'TARGETED_DEVICE_FAMILY' => '1,2'))
 add_sources(ios, shared_refs + ios_refs)
+app_icon = ios_group.new_file('Sources/iOSApp/Assets.xcassets')
+app_icon.last_known_file_type = 'folder.assetcatalog'
+add_resources(ios, [app_icon])
+ios.build_configurations.each do |config|
+  config.build_settings['ASSETCATALOG_COMPILER_APPICON_NAME'] = 'AppIcon'
+end
 ios.add_system_framework('SwiftUI.framework')
 ios.add_system_framework('ActivityKit.framework')
 

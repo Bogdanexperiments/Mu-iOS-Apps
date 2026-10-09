@@ -16,6 +16,8 @@ targets:
     sources:
       - Sources/Shared
       - Sources/iOSApp
+    resources:
+      - Sources/iOSApp/Assets.xcassets
     dependencies:
       - target: SCPFoundationWidgets
         embed: true
