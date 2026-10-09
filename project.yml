@@ -31,6 +31,7 @@ targets:
         CFBundleURLTypes:
           - CFBundleURLName: SCP Foundation admin registration
             CFBundleURLSchemes:
+              - scp
               - scpfoundation
     settings:
       base:

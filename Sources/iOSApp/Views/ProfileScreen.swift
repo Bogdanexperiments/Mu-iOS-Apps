@@ -219,7 +219,7 @@ struct O5RegistrationScreen: View {
                     clearance: .level5
                 ),
                 password: password,
-                allowO5Invite: true
+                o5InviteToken: link.token
             )
             onFinished()
         } catch {

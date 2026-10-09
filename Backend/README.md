@@ -8,6 +8,6 @@ The repository contains `supabase_schema.sql` for the online account store, publ
 2. Run `supabase_schema.sql` in the Supabase SQL Editor.
 3. Enable Email authentication.
 4. Add the project URL and publishable anon key to the app's local `SupabaseConfig.swift` (do not commit service-role keys).
-5. Implement O5 issue/consume as a Supabase Edge Function or `SECURITY DEFINER` RPC. The first invited address is `ioiopiphone@icloud.com`.
+5. Implement O5 issue/consume as a Supabase Edge Function or `SECURITY DEFINER` RPC. The first invited address is `ioiopiphone@icloud.com`, but the address alone must never grant Level 5; require normal authentication plus a server-verified, single-use invite token.
 
-The catalog source is the public SCP Data API metadata index. It provides article title, source URL, creation author and author URL fields without copying article text into the app.
+The catalog source is the public SCP Data API metadata index. It provides article title, source URL, creation author and author URL fields without copying article text into the app. The app emits `scp://auth/invite?token=...` links and keeps the legacy `scpfoundation://admin/register` route for compatibility.

@@ -35,9 +35,10 @@
 		<dict>
 			<key>CFBundleURLName</key>
 			<string>SCP Foundation admin registration</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>scpfoundation</string>
+				<key>CFBundleURLSchemes</key>
+				<array>
+					<string>scp</string>
+					<string>scpfoundation</string>
 			</array>
 		</dict>
 	</array>

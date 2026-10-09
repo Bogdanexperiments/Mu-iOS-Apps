@@ -20,9 +20,13 @@ struct SCPFoundationIOSApp: App {
             }
             .preferredColorScheme(store.preferredColorScheme)
             .onOpenURL { url in
-                guard url.scheme == "scpfoundation",
-                      url.host == "admin",
-                      url.path == "/register",
+                let isCurrentInvite = url.scheme == "scp" &&
+                    url.host == "auth" &&
+                    url.path == "/invite"
+                let isLegacyInvite = url.scheme == "scpfoundation" &&
+                    url.host == "admin" &&
+                    url.path == "/register"
+                guard isCurrentInvite || isLegacyInvite,
                       let token = URLComponents(url: url, resolvingAgainstBaseURL: false)?
                         .queryItems?.first(where: { $0.name == "token" })?.value else { return }
                 registrationLink = registrationLinks.link(for: token)

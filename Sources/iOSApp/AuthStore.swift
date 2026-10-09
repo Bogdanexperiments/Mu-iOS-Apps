@@ -44,7 +44,7 @@ final class AuthStore: ObservableObject {
         isAuthorized || isSkipped
     }
 
-    func register(profile: SCPWorkerProfile) {
+    private func register(profile: SCPWorkerProfile) {
         self.profile = profile
         self.isSkipped = false
         saveProfile(profile)
@@ -105,8 +105,8 @@ final class AuthStore: ObservableObject {
         }
     }
 
-    func registerOnline(profile: SCPWorkerProfile, password: String, allowO5Invite: Bool = false) async throws {
-        if profile.clearance == .level5 && !allowO5Invite {
+    func registerOnline(profile: SCPWorkerProfile, password: String, o5InviteToken: String? = nil) async throws {
+        if profile.clearance == .level5 && (o5InviteToken?.isEmpty ?? true) {
             throw AuthStoreError.o5LinkRequired
         }
         let cleanedPassword = password.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -143,7 +143,8 @@ final class AuthStore: ObservableObject {
                 "worker_id": profile.workerId,
                 "department": profile.department,
                 "site": profile.site,
-                "clearance": profile.clearance.rawValue
+                "clearance": profile.clearance.rawValue,
+                "o5_invite_token": o5InviteToken ?? ""
             ]
         )
         request.httpBody = try JSONEncoder().encode(payload)
@@ -260,9 +261,9 @@ struct O5RegistrationLink: Codable, Identifiable, Hashable {
     var isUsable: Bool { usedAt == nil && !isExpired }
     var url: URL {
         var components = URLComponents()
-        components.scheme = "scpfoundation"
-        components.host = "admin"
-        components.path = "/register"
+        components.scheme = "scp"
+        components.host = "auth"
+        components.path = "/invite"
         components.queryItems = [URLQueryItem(name: "token", value: token)]
         return components.url!
     }
