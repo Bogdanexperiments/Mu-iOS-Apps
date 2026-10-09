@@ -4,6 +4,10 @@ struct BriefingScreen: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
+                FoundationLogoView(size: 92)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 8)
+
                 section(
                     title: "О приложении",
                     lines: [

@@ -5,5 +5,6 @@ import WidgetKit
 struct SCPFoundationWidgetsBundle: WidgetBundle {
     var body: some Widget {
         ContainmentActivityWidget()
+        SCPStatusWidget()
     }
 }

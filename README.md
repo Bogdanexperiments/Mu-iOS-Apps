@@ -13,6 +13,8 @@ SwiftUI-проект на основе рабочего кода `Bogdanexperime
 
 В карточке аномалии работает цветное свечение класса: Safe — зелёное, Euclid — жёлтое, Keter — красное, Thaumiel — синее.
 
+В WidgetKit доступны Live Activity и обычный статический виджет `SCPStatusWidget`. Логотип Foundation вынесен в общий `FoundationLogoView`, а для совместимости добавлен API `.liquidGlass(cornerRadius:)`.
+
 В проект также входят выбор фото профиля через PhotosPicker, O5 deep-link registration и `Backend/supabase_schema.sql` для онлайн-хранения аккаунтов, аватаров, каталога metadata и приглашений O5. Первый приглашённый адрес в схеме — `ioiopiphone@icloud.com`.
 
 ## Первый запуск на Mac

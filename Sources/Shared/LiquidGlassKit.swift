@@ -277,3 +277,23 @@ struct SCPDangerBadge: View {
         .overlay(Capsule().stroke(dangerClass.borderColor, lineWidth: 1))
     }
 }
+
+
+// Compatibility API from the portable project specification.
+struct LiquidGlassModifier: ViewModifier {
+    let cornerRadius: CGFloat
+
+    func body(content: Content) -> some View {
+        content.liquidGlassCard(
+            cornerRadius: cornerRadius,
+            horizontalPadding: 12,
+            verticalPadding: 12
+        )
+    }
+}
+
+extension View {
+    func liquidGlass(cornerRadius: CGFloat = 20) -> some View {
+        modifier(LiquidGlassModifier(cornerRadius: cornerRadius))
+    }
+}
