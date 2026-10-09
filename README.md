@@ -35,6 +35,8 @@ open SCPFoundation.xcodeproj
 
 Для iOS выбери `SCPFoundationIOS` и iPhone Simulator. Для watchOS используй `SCPFoundationWatch` только с Apple Watch Simulator; не запускай watchOS-схему на `My Mac`.
 
+Для тестов выбери схему `SCPFoundationIOS` и выполни `Product → Test` (`⌘U`). В `SCPFoundationTests` входят проверки каталога, Liquid Glass modifier и Foundation logo.
+
 ## Важно
 
 Открывать нужно именно готовый `SCPFoundation.xcodeproj` в корне. Он пересоздан с нуля и фактически содержит iOS, WidgetKit, watchOS, macOS, visionOS и test targets. `project.yml` и `GENERATE_PROJECT.sh` оставлены для повторной генерации на Mac с установленными XcodeGen и Xcode.

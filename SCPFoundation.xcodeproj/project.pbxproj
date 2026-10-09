@@ -7,98 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		043020B18E9AFF14AC895BD1 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97193D784D877B57BDE57396 /* AppLanguage.swift */; };
-		0D43852BCBD43A25B9538456 /* WatchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F00D61451C63B7AA716C9CF /* WatchRootView.swift */; };
-		0D6E62909514E3AE9B493F3D /* SCPStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700C7C12384D72D6EC70F1C2 /* SCPStoreTests.swift */; };
-		15680D712F5642527FCED992 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 750F97CE348DA7E6839290BD /* Cocoa.framework */; };
-		1A75EB8FE8DC65D284B57451 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97193D784D877B57BDE57396 /* AppLanguage.swift */; };
-		1E099089348F82D653B1658C /* SCPFoundationWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5951F69089F3F16C4575C664 /* SCPFoundationWatchApp.swift */; };
-		1F0AA6782B45DEDC0866D4E5 /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5951CC4923237A8DE5F62245 /* SwiftUI.framework.framework */; };
-		23AFA38B8697684F5C4E245C /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2190CA98BAC64C1A851DE4 /* SCPObject.swift */; };
-		27209395A2F73D675CF79222 /* ProfileAvatarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8592FE7E4FE6FAC166D1B3BF /* ProfileAvatarStore.swift */; };
-		27E55D6826C4B8203C358DBB /* SCPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0692DC0D1EB59A93BB0E946 /* SCPStore.swift */; };
-		2C839BA55EDF5ABD427BD70C /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2AE29AA31C459371C14B4 /* SCPIncidentDoc.swift */; };
-		2EE2BB841816D1F219FB25F3 /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2190CA98BAC64C1A851DE4 /* SCPObject.swift */; };
-		315A1DAC3D6CB95CA583DB70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B2144E2A1FC2B49177B729 /* Foundation.framework */; };
-		39DC8ED03254C3E0B2A167E6 /* FoundationLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C8D83F86C827164F9726F /* FoundationLogoView.swift */; };
-		40BE84E7AD1DFB22EF94766D /* SCPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0692DC0D1EB59A93BB0E946 /* SCPStore.swift */; };
-		4AED49F599225FE9ACA7FAEC /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5807767F8B6BE4DCFEBEED8A /* AuthStore.swift */; };
-		4C61E633C3728A594A7B70EE /* ContainmentActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963708D73AC3A96DB36D0C71 /* ContainmentActivityAttributes.swift */; };
-		5064238E3CBF711BD7C81E48 /* FoundationLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C8D83F86C827164F9726F /* FoundationLogoView.swift */; };
-		559EB325514F7E2F6958D465 /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C318BDD3D0F4A0A5E467E67C /* SwiftUI.framework.framework */; };
-		5B55BE85B71008F0932A7911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CF28926474058354AB33AA0 /* Assets.xcassets */; };
-		5F6E69F5D7D1D927FF6784A0 /* SCPFoundationWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 088677AF68C3D49A11A015B7 /* SCPFoundationWidgets.appex */; };
-		617A9AE8347F8E7066CD5074 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187E23EB6EFFED2C1DD49DDA /* Foundation.framework */; };
-		618F9F9A8F1C3362BF73D712 /* AuthorizationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4188F618B6807F6E68564F4A /* AuthorizationScreen.swift */; };
-		628B2765E4A5AD9BA95E593F /* SCPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82339EC673191CD09E0EC061 /* SCPRepository.swift */; };
-		62E2FEDB66203BAEA47CA24D /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2190CA98BAC64C1A851DE4 /* SCPObject.swift */; };
-		637A94ADAAB66BF4D8A2E2A5 /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BE04289F01D12FE74EC6E /* LiquidGlassKit.swift */; };
-		6EF8EE20265A8A241D618E97 /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2AE29AA31C459371C14B4 /* SCPIncidentDoc.swift */; };
-		6F81DC0B601553E9298F3482 /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2190CA98BAC64C1A851DE4 /* SCPObject.swift */; };
-		73348DC30879639C0E9A7C84 /* SCPStatusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792D4C73F03CF038E987C7F4 /* SCPStatusWidget.swift */; };
-		7577179EB267776D785DA53F /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2AE29AA31C459371C14B4 /* SCPIncidentDoc.swift */; };
-		76EFF0DB51CD1F8D7338A69A /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BE04289F01D12FE74EC6E /* LiquidGlassKit.swift */; };
-		78413776B0AB9D56E8740691 /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C318BDD3D0F4A0A5E467E67C /* SwiftUI.framework.framework */; };
-		7A72CE4A81B0CC3F492D7688 /* IncidentsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BF03806ADB8BFBA97FD683 /* IncidentsScreen.swift */; };
-		7F42608CB560E4BAAA51F923 /* BriefingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC3C7841C93643D5BA272B6 /* BriefingScreen.swift */; };
-		82584064DED9A6B8BC078081 /* SCPDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC565563B5B792EC60C01F /* SCPDetailScreen.swift */; };
-		89447BABD15DAC5CA43D9B65 /* FoundationLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C8D83F86C827164F9726F /* FoundationLogoView.swift */; };
-		8AB5524BBCC96FAC35827A9B /* SCPFoundationWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB55B6437F1ECDD8340D769 /* SCPFoundationWidgetsBundle.swift */; };
-		97BFBE2EC5E3FF2AAF7B15CA /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BE04289F01D12FE74EC6E /* LiquidGlassKit.swift */; };
-		9911623D145EEEF190AAD170 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187E23EB6EFFED2C1DD49DDA /* Foundation.framework */; };
-		9934EE6309FCD3D15303AD9B /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97193D784D877B57BDE57396 /* AppLanguage.swift */; };
-		9EDD93D43DDCB78821358B02 /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2AE29AA31C459371C14B4 /* SCPIncidentDoc.swift */; };
-		9F2E70450EBA7647DFB74968 /* SCPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82339EC673191CD09E0EC061 /* SCPRepository.swift */; };
-		A36B375FEA440964CF04CC5A /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DA51ABFC5CD951DF045D5C /* SwiftUI.framework.framework */; };
-		AC7808D7E509EBAA9DE913DD /* SCPListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C012DBC56285E8E73234E49 /* SCPListScreen.swift */; };
-		AC84EEABACC279982A0DE241 /* ContainmentActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027048C42B033A4236D90764 /* ContainmentActivityWidget.swift */; };
-		ACA314680B2FCA4F8DBA0BD7 /* IOSRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF29069CDE6ECD42E41F53BD /* IOSRootView.swift */; };
-		AE083EB8FA87554D9865B1B7 /* PlatformRootViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096500F209A0D3B96D8AC741 /* PlatformRootViews.swift */; };
-		AE8A7FB087FEC71FD1B491C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187E23EB6EFFED2C1DD49DDA /* Foundation.framework */; };
-		AEFDCC91851F848570E52739 /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BE04289F01D12FE74EC6E /* LiquidGlassKit.swift */; };
-		B08FA61B3F3B392CDC8A9F85 /* WidgetKit.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2788A5E5C93A0154610240 /* WidgetKit.framework.framework */; };
-		B17651B7A8D8DB625CB7F7B4 /* SCPFoundationMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D185EE1A5CC487849D2419 /* SCPFoundationMacApp.swift */; };
-		B9768C051F46D2CF1C3158C9 /* PlatformRootViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096500F209A0D3B96D8AC741 /* PlatformRootViews.swift */; };
-		BA61CD6724FD1E41A1B7C58A /* SCPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0692DC0D1EB59A93BB0E946 /* SCPStore.swift */; };
-		C6322329434766A29C67E070 /* SCPFoundationVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3FB80B2C43314EC3AE288 /* SCPFoundationVisionApp.swift */; };
-		D28F5EA44719A8DAB761A479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187E23EB6EFFED2C1DD49DDA /* Foundation.framework */; };
-		D78E05B141E30A6180DD6AD0 /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFF9D9267E6AE903E09F661 /* SwiftUI.framework.framework */; };
-		D81A6E2FA5C2BB22A74B8280 /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3BE04289F01D12FE74EC6E /* LiquidGlassKit.swift */; };
-		D9CD6BF2AA1E1E7F384C397E /* ContainmentLiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2526B0B7CCAE36C82AD9CC /* ContainmentLiveActivityManager.swift */; };
-		E0A48D1332E401EAAD240E51 /* SCPFoundationIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99EC3BC7590B68B28937F39 /* SCPFoundationIOSApp.swift */; };
-		E55AF84821C6080B464BDB89 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66FA9A88ECF0D1C95F9C85F /* ProfileScreen.swift */; };
-		ED1077BCDDED31D6DD882269 /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF838F9093A941A4C4A832D /* FavoritesScreen.swift */; };
-		EE2DD6948077E518C50018CE /* SCPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82339EC673191CD09E0EC061 /* SCPRepository.swift */; };
-		F9E93F9FE4624FE3ACF520BB /* ActivityKit.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCA6F826A2067F7C4FE2606 /* ActivityKit.framework.framework */; };
-		FAD48811FA0F3A954BE5CDFF /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2190CA98BAC64C1A851DE4 /* SCPObject.swift */; };
-		FC352C2C07D64DB11CCBE233 /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2AE29AA31C459371C14B4 /* SCPIncidentDoc.swift */; };
+		0001F436F7C618BB58719C8A /* AuthorizationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832EC85D2FC73821D1F62833 /* AuthorizationScreen.swift */; };
+		05F279442B464BE8D39F8A45 /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06A47CA3C0F2C3B6C700DE /* LiquidGlassKit.swift */; };
+		081852F3B6355B93955FE3F2 /* SCPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B91A6D06216779C116673 /* SCPRepository.swift */; };
+		0DCC676B67F275C81F9755FE /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50615D51F78E76DBCB416EEE /* SCPObject.swift */; };
+		10C2EEB4005A3AD45828D487 /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50615D51F78E76DBCB416EEE /* SCPObject.swift */; };
+		1503030FADD4920DF3DD4271 /* WidgetKit.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39DC16FB7E428C5A38DC14F /* WidgetKit.framework.framework */; };
+		177C11C2F307310EAB905126 /* ActivityKit.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371C0006E50CCA4DBD7182F1 /* ActivityKit.framework.framework */; };
+		2028B24EF9663B07740BA1C9 /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B92F8B536F857BC42F3A78 /* SwiftUI.framework.framework */; };
+		20F96E7E4C05C698C39B1046 /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DAF0CA2B00545E80D6EA94 /* SCPIncidentDoc.swift */; };
+		2945A255A9EB4ABA28A54085 /* SCPFoundationVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4F219E1154F12A80E0EE28 /* SCPFoundationVisionApp.swift */; };
+		2B4F28CC20B5DFD815E08F7D /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50615D51F78E76DBCB416EEE /* SCPObject.swift */; };
+		2D2A3FBA2FA842F95BDB98CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F693B946A4672A9967EDCB44 /* Foundation.framework */; };
+		2DBE10C75A6B9F99841062C4 /* SCPFoundationIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78ACF21E81BD32B990B2B123 /* SCPFoundationIOSApp.swift */; };
+		2E4DD4ED0313EA01BFF976CD /* ProfileAvatarStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276954FB8219544EFD04D1E /* ProfileAvatarStore.swift */; };
+		2E78CD8F6395770474ABD50E /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50615D51F78E76DBCB416EEE /* SCPObject.swift */; };
+		2F93EB9EC1771174BE416915 /* SCPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17458B5A4925C6DE28FEDB /* SCPStore.swift */; };
+		2FD1CC7EF4AE00D9D3D2523C /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C145E4CF6CF5D89822801 /* ProfileScreen.swift */; };
+		30B26A2BD6ED6CDD7DE01F53 /* BriefingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D84090E98693454C43551 /* BriefingScreen.swift */; };
+		313D41C5E8388E9A183C2FDD /* SCPObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50615D51F78E76DBCB416EEE /* SCPObject.swift */; };
+		335D410773BD533AFA29B636 /* SCPFoundationMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D822070D5E1440DF423ECE /* SCPFoundationMacApp.swift */; };
+		33A0232925663DBE3B92B231 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58DCEDAA064242345A17B7FB /* Cocoa.framework */; };
+		425CFA87F1AF63F839ECC2C9 /* PlatformRootViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6107B62A24684B4518D672E /* PlatformRootViews.swift */; };
+		438B77B7A937213532A44DBE /* SCPFoundationWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE437C38F07B2A26CEE3E91F /* SCPFoundationWidgetsBundle.swift */; };
+		43E005A2CA1564DE0496E84A /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEF04AAF8DC6118E7D8A90 /* AppLanguage.swift */; };
+		452F8722A5DBD525BA4FB5D9 /* ContainmentLiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA965A2A920DD801F25E8AE /* ContainmentLiveActivityManager.swift */; };
+		4BE86339CFF44F1422CAD229 /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD3C3D997337A38E2935A14 /* SwiftUI.framework.framework */; };
+		4CE8EA36DE24BA3EC6AD669E /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06A47CA3C0F2C3B6C700DE /* LiquidGlassKit.swift */; };
+		5262B74023B7E7EE6A37ED08 /* WatchRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489AD085E98594E8C5F8E1A5 /* WatchRootView.swift */; };
+		539389094991F1231448C7EA /* IncidentsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32DF954ACFB57DA3446A24D /* IncidentsScreen.swift */; };
+		5578DBBDB7C20B006B63C958 /* SCPStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13E5C79F1DF426586577B8 /* SCPStoreTests.swift */; };
+		5B55D289865F5BC99217060A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F693B946A4672A9967EDCB44 /* Foundation.framework */; };
+		613B5B289CB3E42484678423 /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DAF0CA2B00545E80D6EA94 /* SCPIncidentDoc.swift */; };
+		66A004E4E8F7C8A67C2193C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 384EFE6E56F0A6C28F4B5A53 /* Assets.xcassets */; };
+		67ADC5AE4E0F6D504A64B518 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F693B946A4672A9967EDCB44 /* Foundation.framework */; };
+		6D14E863252322829A235772 /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06A47CA3C0F2C3B6C700DE /* LiquidGlassKit.swift */; };
+		71BE67185330A2F62D170527 /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DAF0CA2B00545E80D6EA94 /* SCPIncidentDoc.swift */; };
+		724ACC2E4110053F1787487E /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD3C3D997337A38E2935A14 /* SwiftUI.framework.framework */; };
+		7544A662B4A9B4BFB34D2625 /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06A47CA3C0F2C3B6C700DE /* LiquidGlassKit.swift */; };
+		7A7DD3BEB8772FCE04FB476F /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E2BD7D9488C911734A72532 /* SwiftUI.framework.framework */; };
+		874D8F4DE22579E55A6DCF70 /* PlatformRootViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6107B62A24684B4518D672E /* PlatformRootViews.swift */; };
+		9081B2A7F571F4DC372EE14F /* FoundationLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C951E918B88CEDB07905B9 /* FoundationLogoView.swift */; };
+		938C7C89B627F9BA17C3FF84 /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEF04AAF8DC6118E7D8A90 /* AppLanguage.swift */; };
+		93DDC3C37A6B8F1B104587C2 /* SCPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B91A6D06216779C116673 /* SCPRepository.swift */; };
+		94789FA87DEB5BDC8B9219D5 /* ContainmentActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EB1F2FC3FE3FB23AF64BD /* ContainmentActivityWidget.swift */; };
+		94B5DF797A0ED85C0AEA292D /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DAF0CA2B00545E80D6EA94 /* SCPIncidentDoc.swift */; };
+		A0243B0988399CAC03647333 /* SwiftUI.framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E338855DE047726E991FF7F /* SwiftUI.framework.framework */; };
+		A2A1F2AF0717D1D61816C935 /* SCPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17458B5A4925C6DE28FEDB /* SCPStore.swift */; };
+		A2F17398441CEE2D54C83A39 /* IOSRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD249F7E51890A81AF60D475 /* IOSRootView.swift */; };
+		A46573F4EFA68993AE66BFF6 /* LiquidGlassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E06A47CA3C0F2C3B6C700DE /* LiquidGlassKit.swift */; };
+		A6A1576067DE9700AE387803 /* ContainmentActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831D877C2B2865135BE19B7B /* ContainmentActivityAttributes.swift */; };
+		A8B9D5CC87F7C43DCE8D1A72 /* SCPStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17458B5A4925C6DE28FEDB /* SCPStore.swift */; };
+		ADA9FECD9A4DCA73AA464667 /* FoundationLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C951E918B88CEDB07905B9 /* FoundationLogoView.swift */; };
+		AF8B10E5D77E16A19F0EC0ED /* SCPFoundationWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4593E202B193471997D37D46 /* SCPFoundationWatchApp.swift */; };
+		BCE417267DE66301F77072E6 /* SCPListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE0FD2B8ED819B5A9D2259 /* SCPListScreen.swift */; };
+		BD61CB18DB9958F413DFB069 /* SCPDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F5191C23D3E691C4426F2F /* SCPDetailScreen.swift */; };
+		BF2E096CC0B62609E7EE02E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF20316A15DAB6B45B11CB70 /* Foundation.framework */; };
+		C063A367EFD48E6C969821E8 /* SCPFoundationWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 70C7A8EA3239A5177BC15A81 /* SCPFoundationWidgets.appex */; };
+		C541DC891E1A8B91DA8FF06B /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89BDD6A0935AE4E169187C5 /* FavoritesScreen.swift */; };
+		D14AB0FEEA091B7C876BF35A /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFEF04AAF8DC6118E7D8A90 /* AppLanguage.swift */; };
+		D628E163CDC588C00867258D /* AuthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B21C56F2E497B583F635ECC /* AuthStore.swift */; };
+		DBC541E6FCD95BB650FA61D5 /* SCPStatusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A403D8E9688A3B48EE07924 /* SCPStatusWidget.swift */; };
+		E9343055769BA081DC731FB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F693B946A4672A9967EDCB44 /* Foundation.framework */; };
+		E94C8FBDAD6D0637814C151D /* LiquidGlassAndLogoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8B8865969044876C35A210 /* LiquidGlassAndLogoTests.swift */; };
+		EFA411F54B7C7C060EA989E4 /* SCPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98B91A6D06216779C116673 /* SCPRepository.swift */; };
+		F6D12862180173B477115971 /* FoundationLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C951E918B88CEDB07905B9 /* FoundationLogoView.swift */; };
+		FA43AB69826A485CBA7F8BB3 /* SCPIncidentDoc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DAF0CA2B00545E80D6EA94 /* SCPIncidentDoc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4FC30C1BCC4F906E365CBEB0 /* PBXContainerItemProxy */ = {
+		A52CC826858A575053F6113A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DA1B4955739C25906E9145E1 /* Project object */;
+			containerPortal = A682046F4E867142CE7AA9D5 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A3B174AFFAC51143329B7E3E;
-			remoteInfo = SCPFoundationIOS;
-		};
-		D3A5165CF53DFFE72406726B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1B4955739C25906E9145E1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B9CD4E182930CB55CBD9CFD8;
+			remoteGlobalIDString = B79DC1D3A4C16A62F0549F51;
 			remoteInfo = SCPFoundationWidgets;
+		};
+		BDB3A6D57C8BE8DE94BD8DFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A682046F4E867142CE7AA9D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97B52BC26BA7ED8CA2F77663;
+			remoteInfo = SCPFoundationIOS;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F437638400F65BEF739C0DE9 /* Embed Foundation Extensions */ = {
+		949B244445D02EF7A4AC2DF8 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5F6E69F5D7D1D927FF6784A0 /* SCPFoundationWidgets.appex in Embed Foundation Extensions */,
+				C063A367EFD48E6C969821E8 /* SCPFoundationWidgets.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,209 +107,243 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		027048C42B033A4236D90764 /* ContainmentActivityWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainmentActivityWidget.swift; path = Sources/Widgets/ContainmentActivityWidget.swift; sourceTree = "<group>"; };
-		06368B626879D2B80AA0B747 /* SCPFoundationIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPFoundationIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		06D185EE1A5CC487849D2419 /* SCPFoundationMacApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationMacApp.swift; path = Sources/MacApp/SCPFoundationMacApp.swift; sourceTree = "<group>"; };
-		088677AF68C3D49A11A015B7 /* SCPFoundationWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SCPFoundationWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		096500F209A0D3B96D8AC741 /* PlatformRootViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlatformRootViews.swift; path = Sources/PlatformSupport/PlatformRootViews.swift; sourceTree = "<group>"; };
-		0A2788A5E5C93A0154610240 /* WidgetKit.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/WidgetKit.framework.framework; sourceTree = DEVELOPER_DIR; };
-		0BCA6F826A2067F7C4FE2606 /* ActivityKit.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/ActivityKit.framework.framework; sourceTree = DEVELOPER_DIR; };
-		187E23EB6EFFED2C1DD49DDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		1DF08FF897CCAEB75BF4BB9B /* SCPFoundationVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPFoundationVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C012DBC56285E8E73234E49 /* SCPListScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPListScreen.swift; path = Sources/iOSApp/Views/SCPListScreen.swift; sourceTree = "<group>"; };
-		3CF28926474058354AB33AA0 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/iOSApp/Assets.xcassets; sourceTree = "<group>"; };
-		4188F618B6807F6E68564F4A /* AuthorizationScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationScreen.swift; path = Sources/iOSApp/Views/AuthorizationScreen.swift; sourceTree = "<group>"; };
-		4CF838F9093A941A4C4A832D /* FavoritesScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FavoritesScreen.swift; path = Sources/iOSApp/Views/FavoritesScreen.swift; sourceTree = "<group>"; };
-		4DFF9D9267E6AE903E09F661 /* SwiftUI.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework.framework; path = Platforms/XROS.platform/Developer/SDKs/XROS26.0.sdk/System/Library/Frameworks/SwiftUI.framework.framework; sourceTree = DEVELOPER_DIR; };
-		54F3FB80B2C43314EC3AE288 /* SCPFoundationVisionApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationVisionApp.swift; path = Sources/VisionApp/SCPFoundationVisionApp.swift; sourceTree = "<group>"; };
-		5807767F8B6BE4DCFEBEED8A /* AuthStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthStore.swift; path = Sources/iOSApp/AuthStore.swift; sourceTree = "<group>"; };
-		581DDF314D44795712D2285A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/WatchApp/Info.plist; sourceTree = "<group>"; };
-		5951CC4923237A8DE5F62245 /* SwiftUI.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/SwiftUI.framework.framework; sourceTree = DEVELOPER_DIR; };
-		5951F69089F3F16C4575C664 /* SCPFoundationWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationWatchApp.swift; path = Sources/WatchApp/SCPFoundationWatchApp.swift; sourceTree = "<group>"; };
-		5FF81379D254FE5F96AEA0D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/MacApp/Info.plist; sourceTree = "<group>"; };
-		6F00D61451C63B7AA716C9CF /* WatchRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WatchRootView.swift; path = Sources/WatchApp/Views/WatchRootView.swift; sourceTree = "<group>"; };
-		700C7C12384D72D6EC70F1C2 /* SCPStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPStoreTests.swift; path = Tests/SCPStoreTests.swift; sourceTree = "<group>"; };
-		750F97CE348DA7E6839290BD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		792D4C73F03CF038E987C7F4 /* SCPStatusWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPStatusWidget.swift; path = Sources/Widgets/SCPStatusWidget.swift; sourceTree = "<group>"; };
-		82339EC673191CD09E0EC061 /* SCPRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPRepository.swift; path = Sources/Shared/SCPRepository.swift; sourceTree = "<group>"; };
-		8592FE7E4FE6FAC166D1B3BF /* ProfileAvatarStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileAvatarStore.swift; path = Sources/iOSApp/ProfileAvatarStore.swift; sourceTree = "<group>"; };
-		8DB55B6437F1ECDD8340D769 /* SCPFoundationWidgetsBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationWidgetsBundle.swift; path = Sources/Widgets/SCPFoundationWidgetsBundle.swift; sourceTree = "<group>"; };
-		963708D73AC3A96DB36D0C71 /* ContainmentActivityAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainmentActivityAttributes.swift; path = Sources/iOSApp/LiveActivity/ContainmentActivityAttributes.swift; sourceTree = "<group>"; };
-		97193D784D877B57BDE57396 /* AppLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppLanguage.swift; path = Sources/Shared/AppLanguage.swift; sourceTree = "<group>"; };
-		9D3BE04289F01D12FE74EC6E /* LiquidGlassKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidGlassKit.swift; path = Sources/Shared/LiquidGlassKit.swift; sourceTree = "<group>"; };
-		A66FA9A88ECF0D1C95F9C85F /* ProfileScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileScreen.swift; path = Sources/iOSApp/Views/ProfileScreen.swift; sourceTree = "<group>"; };
-		A7DA51ABFC5CD951DF045D5C /* SwiftUI.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.0.sdk/System/Library/Frameworks/SwiftUI.framework.framework; sourceTree = DEVELOPER_DIR; };
-		A958ECFDCAF2A2E36152D8A0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Widgets/Info.plist; sourceTree = "<group>"; };
-		AF29069CDE6ECD42E41F53BD /* IOSRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOSRootView.swift; path = Sources/iOSApp/Views/IOSRootView.swift; sourceTree = "<group>"; };
-		BBB2AE29AA31C459371C14B4 /* SCPIncidentDoc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPIncidentDoc.swift; path = Sources/Shared/SCPIncidentDoc.swift; sourceTree = "<group>"; };
-		BD1328A949D2E5286E48B7A8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/iOSApp/Info.plist; sourceTree = "<group>"; };
-		C0692DC0D1EB59A93BB0E946 /* SCPStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPStore.swift; path = Sources/Shared/SCPStore.swift; sourceTree = "<group>"; };
-		C318BDD3D0F4A0A5E467E67C /* SwiftUI.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/SwiftUI.framework.framework; sourceTree = DEVELOPER_DIR; };
-		C84C5CBE9A312C4DE70BD32F /* SCPFoundationMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPFoundationMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C99EC3BC7590B68B28937F39 /* SCPFoundationIOSApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationIOSApp.swift; path = Sources/iOSApp/SCPFoundationIOSApp.swift; sourceTree = "<group>"; };
-		CE4F98BD8BCF8FEDB6F31065 /* SCPFoundationWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPFoundationWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6EDA525A7DF2AE1DFE2A636 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/VisionApp/Info.plist; sourceTree = "<group>"; };
-		DACC565563B5B792EC60C01F /* SCPDetailScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPDetailScreen.swift; path = Sources/iOSApp/Views/SCPDetailScreen.swift; sourceTree = "<group>"; };
-		E0B2144E2A1FC2B49177B729 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E9BF03806ADB8BFBA97FD683 /* IncidentsScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IncidentsScreen.swift; path = Sources/iOSApp/Views/IncidentsScreen.swift; sourceTree = "<group>"; };
-		ED2526B0B7CCAE36C82AD9CC /* ContainmentLiveActivityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainmentLiveActivityManager.swift; path = Sources/iOSApp/LiveActivity/ContainmentLiveActivityManager.swift; sourceTree = "<group>"; };
-		FA2190CA98BAC64C1A851DE4 /* SCPObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPObject.swift; path = Sources/Shared/SCPObject.swift; sourceTree = "<group>"; };
-		FAC3C7841C93643D5BA272B6 /* BriefingScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BriefingScreen.swift; path = Sources/iOSApp/Views/BriefingScreen.swift; sourceTree = "<group>"; };
-		FD4C8D83F86C827164F9726F /* FoundationLogoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationLogoView.swift; path = Sources/Shared/FoundationLogoView.swift; sourceTree = "<group>"; };
-		FEFA54003A78D1BB27DE1D01 /* SCPFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCPFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E56CF56273418072C64F04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/iOSApp/Info.plist; sourceTree = "<group>"; };
+		20875314E7B501CE9F36D427 /* SCPFoundationIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPFoundationIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD3C3D997337A38E2935A14 /* SwiftUI.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/SwiftUI.framework.framework; sourceTree = DEVELOPER_DIR; };
+		2DFE0FD2B8ED819B5A9D2259 /* SCPListScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPListScreen.swift; path = Sources/iOSApp/Views/SCPListScreen.swift; sourceTree = "<group>"; };
+		2E2BD7D9488C911734A72532 /* SwiftUI.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.0.sdk/System/Library/Frameworks/SwiftUI.framework.framework; sourceTree = DEVELOPER_DIR; };
+		31F5191C23D3E691C4426F2F /* SCPDetailScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPDetailScreen.swift; path = Sources/iOSApp/Views/SCPDetailScreen.swift; sourceTree = "<group>"; };
+		371C0006E50CCA4DBD7182F1 /* ActivityKit.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActivityKit.framework.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/ActivityKit.framework.framework; sourceTree = DEVELOPER_DIR; };
+		384EFE6E56F0A6C28F4B5A53 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sources/iOSApp/Assets.xcassets; sourceTree = "<group>"; };
+		401AFB462A2033E82E5E82C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/WatchApp/Info.plist; sourceTree = "<group>"; };
+		432EB1F2FC3FE3FB23AF64BD /* ContainmentActivityWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainmentActivityWidget.swift; path = Sources/Widgets/ContainmentActivityWidget.swift; sourceTree = "<group>"; };
+		4593E202B193471997D37D46 /* SCPFoundationWatchApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationWatchApp.swift; path = Sources/WatchApp/SCPFoundationWatchApp.swift; sourceTree = "<group>"; };
+		489AD085E98594E8C5F8E1A5 /* WatchRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WatchRootView.swift; path = Sources/WatchApp/Views/WatchRootView.swift; sourceTree = "<group>"; };
+		4B21C56F2E497B583F635ECC /* AuthStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthStore.swift; path = Sources/iOSApp/AuthStore.swift; sourceTree = "<group>"; };
+		4BCE1B1029DCC3B85351E849 /* SCPFoundationWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPFoundationWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50615D51F78E76DBCB416EEE /* SCPObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPObject.swift; path = Sources/Shared/SCPObject.swift; sourceTree = "<group>"; };
+		5276954FB8219544EFD04D1E /* ProfileAvatarStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileAvatarStore.swift; path = Sources/iOSApp/ProfileAvatarStore.swift; sourceTree = "<group>"; };
+		53E76A675B1B5E0663C03B12 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/MacApp/Info.plist; sourceTree = "<group>"; };
+		58DCEDAA064242345A17B7FB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		70C7A8EA3239A5177BC15A81 /* SCPFoundationWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SCPFoundationWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		78ACF21E81BD32B990B2B123 /* SCPFoundationIOSApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationIOSApp.swift; path = Sources/iOSApp/SCPFoundationIOSApp.swift; sourceTree = "<group>"; };
+		7AA965A2A920DD801F25E8AE /* ContainmentLiveActivityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainmentLiveActivityManager.swift; path = Sources/iOSApp/LiveActivity/ContainmentLiveActivityManager.swift; sourceTree = "<group>"; };
+		7C6C145E4CF6CF5D89822801 /* ProfileScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileScreen.swift; path = Sources/iOSApp/Views/ProfileScreen.swift; sourceTree = "<group>"; };
+		831D877C2B2865135BE19B7B /* ContainmentActivityAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainmentActivityAttributes.swift; path = Sources/iOSApp/LiveActivity/ContainmentActivityAttributes.swift; sourceTree = "<group>"; };
+		832EC85D2FC73821D1F62833 /* AuthorizationScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthorizationScreen.swift; path = Sources/iOSApp/Views/AuthorizationScreen.swift; sourceTree = "<group>"; };
+		8A403D8E9688A3B48EE07924 /* SCPStatusWidget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPStatusWidget.swift; path = Sources/Widgets/SCPStatusWidget.swift; sourceTree = "<group>"; };
+		8A4FC2BAAA61829314B0C771 /* SCPFoundationVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPFoundationVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E338855DE047726E991FF7F /* SwiftUI.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework.framework; path = Platforms/XROS.platform/Developer/SDKs/XROS26.0.sdk/System/Library/Frameworks/SwiftUI.framework.framework; sourceTree = DEVELOPER_DIR; };
+		9826E4118EC19D037D70FD11 /* SCPFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCPFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E06A47CA3C0F2C3B6C700DE /* LiquidGlassKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidGlassKit.swift; path = Sources/Shared/LiquidGlassKit.swift; sourceTree = "<group>"; };
+		A98B91A6D06216779C116673 /* SCPRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPRepository.swift; path = Sources/Shared/SCPRepository.swift; sourceTree = "<group>"; };
+		AAFEF04AAF8DC6118E7D8A90 /* AppLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppLanguage.swift; path = Sources/Shared/AppLanguage.swift; sourceTree = "<group>"; };
+		AD8B8865969044876C35A210 /* LiquidGlassAndLogoTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiquidGlassAndLogoTests.swift; path = Tests/LiquidGlassAndLogoTests.swift; sourceTree = "<group>"; };
+		B1B92F8B536F857BC42F3A78 /* SwiftUI.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.0.sdk/System/Library/Frameworks/SwiftUI.framework.framework; sourceTree = DEVELOPER_DIR; };
+		B6107B62A24684B4518D672E /* PlatformRootViews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlatformRootViews.swift; path = Sources/PlatformSupport/PlatformRootViews.swift; sourceTree = "<group>"; };
+		B89BDD6A0935AE4E169187C5 /* FavoritesScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FavoritesScreen.swift; path = Sources/iOSApp/Views/FavoritesScreen.swift; sourceTree = "<group>"; };
+		BD249F7E51890A81AF60D475 /* IOSRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOSRootView.swift; path = Sources/iOSApp/Views/IOSRootView.swift; sourceTree = "<group>"; };
+		BE437C38F07B2A26CEE3E91F /* SCPFoundationWidgetsBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationWidgetsBundle.swift; path = Sources/Widgets/SCPFoundationWidgetsBundle.swift; sourceTree = "<group>"; };
+		C39DC16FB7E428C5A38DC14F /* WidgetKit.framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/WidgetKit.framework.framework; sourceTree = DEVELOPER_DIR; };
+		C7D822070D5E1440DF423ECE /* SCPFoundationMacApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationMacApp.swift; path = Sources/MacApp/SCPFoundationMacApp.swift; sourceTree = "<group>"; };
+		CC13E5C79F1DF426586577B8 /* SCPStoreTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPStoreTests.swift; path = Tests/SCPStoreTests.swift; sourceTree = "<group>"; };
+		CC2D84090E98693454C43551 /* BriefingScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BriefingScreen.swift; path = Sources/iOSApp/Views/BriefingScreen.swift; sourceTree = "<group>"; };
+		CF20316A15DAB6B45B11CB70 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DB4F219E1154F12A80E0EE28 /* SCPFoundationVisionApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPFoundationVisionApp.swift; path = Sources/VisionApp/SCPFoundationVisionApp.swift; sourceTree = "<group>"; };
+		DB7CFBDC4B9E14EDF24419F0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Widgets/Info.plist; sourceTree = "<group>"; };
+		DF17458B5A4925C6DE28FEDB /* SCPStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPStore.swift; path = Sources/Shared/SCPStore.swift; sourceTree = "<group>"; };
+		DF422E4CDCD719C3AF074752 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/VisionApp/Info.plist; sourceTree = "<group>"; };
+		EC1418266B82D25669BC681F /* SCPFoundationMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCPFoundationMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DAF0CA2B00545E80D6EA94 /* SCPIncidentDoc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCPIncidentDoc.swift; path = Sources/Shared/SCPIncidentDoc.swift; sourceTree = "<group>"; };
+		F32DF954ACFB57DA3446A24D /* IncidentsScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IncidentsScreen.swift; path = Sources/iOSApp/Views/IncidentsScreen.swift; sourceTree = "<group>"; };
+		F5C951E918B88CEDB07905B9 /* FoundationLogoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationLogoView.swift; path = Sources/Shared/FoundationLogoView.swift; sourceTree = "<group>"; };
+		F693B946A4672A9967EDCB44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		091E5E4BD7B22283BED6D126 /* Frameworks */ = {
+		3DFDC9CB6827AE1174AFB8A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				617A9AE8347F8E7066CD5074 /* Foundation.framework in Frameworks */,
-				559EB325514F7E2F6958D465 /* SwiftUI.framework.framework in Frameworks */,
-				B08FA61B3F3B392CDC8A9F85 /* WidgetKit.framework.framework in Frameworks */,
+				E9343055769BA081DC731FB0 /* Foundation.framework in Frameworks */,
+				A0243B0988399CAC03647333 /* SwiftUI.framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		24563F737476E6DD997B9A3B /* Frameworks */ = {
+		5D66E1FCFBCCA81A325F2A68 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9911623D145EEEF190AAD170 /* Foundation.framework in Frameworks */,
-				78413776B0AB9D56E8740691 /* SwiftUI.framework.framework in Frameworks */,
-				F9E93F9FE4624FE3ACF520BB /* ActivityKit.framework.framework in Frameworks */,
+				67ADC5AE4E0F6D504A64B518 /* Foundation.framework in Frameworks */,
+				4BE86339CFF44F1422CAD229 /* SwiftUI.framework.framework in Frameworks */,
+				1503030FADD4920DF3DD4271 /* WidgetKit.framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C0161EABE9A757A34A9415E /* Frameworks */ = {
+		5E55ADC8D509FC089C7BCB41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15680D712F5642527FCED992 /* Cocoa.framework in Frameworks */,
-				1F0AA6782B45DEDC0866D4E5 /* SwiftUI.framework.framework in Frameworks */,
+				5B55D289865F5BC99217060A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DB47540BEEB8432BC0D370D /* Frameworks */ = {
+		62D47A4F3C8A6F356BBC3C50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				315A1DAC3D6CB95CA583DB70 /* Foundation.framework in Frameworks */,
-				A36B375FEA440964CF04CC5A /* SwiftUI.framework.framework in Frameworks */,
+				2D2A3FBA2FA842F95BDB98CC /* Foundation.framework in Frameworks */,
+				724ACC2E4110053F1787487E /* SwiftUI.framework.framework in Frameworks */,
+				177C11C2F307310EAB905126 /* ActivityKit.framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE717A19CF688B71B8C64980 /* Frameworks */ = {
+		BD88D93E6E67582DAE654399 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE8A7FB087FEC71FD1B491C0 /* Foundation.framework in Frameworks */,
-				D78E05B141E30A6180DD6AD0 /* SwiftUI.framework.framework in Frameworks */,
+				BF2E096CC0B62609E7EE02E1 /* Foundation.framework in Frameworks */,
+				7A7DD3BEB8772FCE04FB476F /* SwiftUI.framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CAC794EED26CAF6E61AC9B5E /* Frameworks */ = {
+		E83D3EF46F87F82CBD8EB7E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D28F5EA44719A8DAB761A479 /* Foundation.framework in Frameworks */,
+				33A0232925663DBE3B92B231 /* Cocoa.framework in Frameworks */,
+				2028B24EF9663B07740BA1C9 /* SwiftUI.framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0199D2BB2FBA1432B77CE1D5 /* Tests */ = {
+		15FE20A2CD7609E553D3E714 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				700C7C12384D72D6EC70F1C2 /* SCPStoreTests.swift */,
-			);
-			name = Tests;
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		0AA08F46171E7142FF1B5A58 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6BA5609AE42E4C6605D30A97 /* iOS */,
-				B845F76243F38860F4D5EC6E /* watchOS */,
-				49391A3705CD90DD86011126 /* OS X */,
-				AA915A7C0CDD1458EE98DE4E /* visionOS */,
+				6BF8263A3F453A7F92C65C36 /* iOS */,
+				25492DCABCB8D7354373DF8B /* watchOS */,
+				1609375D2DCDCF716CD49ABF /* OS X */,
+				FC318347EFFE6ACE77F2B7BB /* visionOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1AC4DE344DF3755664D514A3 /* WatchApp */ = {
+		1609375D2DCDCF716CD49ABF /* OS X */ = {
 			isa = PBXGroup;
 			children = (
-				5951F69089F3F16C4575C664 /* SCPFoundationWatchApp.swift */,
-				6F00D61451C63B7AA716C9CF /* WatchRootView.swift */,
+				58DCEDAA064242345A17B7FB /* Cocoa.framework */,
+				B1B92F8B536F857BC42F3A78 /* SwiftUI.framework.framework */,
 			);
-			name = WatchApp;
-			path = Sources/WatchApp;
+			name = "OS X";
 			sourceTree = "<group>";
 		};
-		2D6D2411F1F2CB33F9657B44 /* iOSApp */ = {
+		2103A1C335AB0868AE90631D = {
 			isa = PBXGroup;
 			children = (
-				5807767F8B6BE4DCFEBEED8A /* AuthStore.swift */,
-				963708D73AC3A96DB36D0C71 /* ContainmentActivityAttributes.swift */,
-				ED2526B0B7CCAE36C82AD9CC /* ContainmentLiveActivityManager.swift */,
-				8592FE7E4FE6FAC166D1B3BF /* ProfileAvatarStore.swift */,
-				C99EC3BC7590B68B28937F39 /* SCPFoundationIOSApp.swift */,
-				4188F618B6807F6E68564F4A /* AuthorizationScreen.swift */,
-				FAC3C7841C93643D5BA272B6 /* BriefingScreen.swift */,
-				4CF838F9093A941A4C4A832D /* FavoritesScreen.swift */,
-				AF29069CDE6ECD42E41F53BD /* IOSRootView.swift */,
-				E9BF03806ADB8BFBA97FD683 /* IncidentsScreen.swift */,
-				A66FA9A88ECF0D1C95F9C85F /* ProfileScreen.swift */,
-				DACC565563B5B792EC60C01F /* SCPDetailScreen.swift */,
-				3C012DBC56285E8E73234E49 /* SCPListScreen.swift */,
-				3CF28926474058354AB33AA0 /* Assets.xcassets */,
+				6D978126BF401BCDBF1DF049 /* Products */,
+				15FE20A2CD7609E553D3E714 /* Frameworks */,
+				8D8BDA4323B3468CD46E4953 /* Shared */,
+				631DC9375FFD464A16457015 /* iOSApp */,
+				FE2F5538C077F4B6E57C3AD1 /* MacApp */,
+				C3DED810463679562DF03152 /* VisionApp */,
+				D949DD22814548ABFF142C5A /* PlatformSupport */,
+				CF492A3DC1043E60A6434AEA /* WatchApp */,
+				55BBA13A4AD765DA1D66483E /* Widgets */,
+				FF2E1A27EED828209FBAC632 /* Tests */,
+				92DE920D22E8FEB7F3B0DDC0 /* Backend */,
+				04E56CF56273418072C64F04 /* Info.plist */,
+				53E76A675B1B5E0663C03B12 /* Info.plist */,
+				DF422E4CDCD719C3AF074752 /* Info.plist */,
+				401AFB462A2033E82E5E82C2 /* Info.plist */,
+				DB7CFBDC4B9E14EDF24419F0 /* Info.plist */,
+				9E395BD907C4051340F809C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25492DCABCB8D7354373DF8B /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				CF20316A15DAB6B45B11CB70 /* Foundation.framework */,
+				2E2BD7D9488C911734A72532 /* SwiftUI.framework.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		55BBA13A4AD765DA1D66483E /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				432EB1F2FC3FE3FB23AF64BD /* ContainmentActivityWidget.swift */,
+				BE437C38F07B2A26CEE3E91F /* SCPFoundationWidgetsBundle.swift */,
+				8A403D8E9688A3B48EE07924 /* SCPStatusWidget.swift */,
+			);
+			name = Widgets;
+			path = Sources/Widgets;
+			sourceTree = "<group>";
+		};
+		631DC9375FFD464A16457015 /* iOSApp */ = {
+			isa = PBXGroup;
+			children = (
+				4B21C56F2E497B583F635ECC /* AuthStore.swift */,
+				831D877C2B2865135BE19B7B /* ContainmentActivityAttributes.swift */,
+				7AA965A2A920DD801F25E8AE /* ContainmentLiveActivityManager.swift */,
+				5276954FB8219544EFD04D1E /* ProfileAvatarStore.swift */,
+				78ACF21E81BD32B990B2B123 /* SCPFoundationIOSApp.swift */,
+				832EC85D2FC73821D1F62833 /* AuthorizationScreen.swift */,
+				CC2D84090E98693454C43551 /* BriefingScreen.swift */,
+				B89BDD6A0935AE4E169187C5 /* FavoritesScreen.swift */,
+				BD249F7E51890A81AF60D475 /* IOSRootView.swift */,
+				F32DF954ACFB57DA3446A24D /* IncidentsScreen.swift */,
+				7C6C145E4CF6CF5D89822801 /* ProfileScreen.swift */,
+				31F5191C23D3E691C4426F2F /* SCPDetailScreen.swift */,
+				2DFE0FD2B8ED819B5A9D2259 /* SCPListScreen.swift */,
+				384EFE6E56F0A6C28F4B5A53 /* Assets.xcassets */,
 			);
 			name = iOSApp;
 			path = Sources/iOSApp;
 			sourceTree = "<group>";
 		};
-		49391A3705CD90DD86011126 /* OS X */ = {
+		6BF8263A3F453A7F92C65C36 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				750F97CE348DA7E6839290BD /* Cocoa.framework */,
-				5951CC4923237A8DE5F62245 /* SwiftUI.framework.framework */,
+				F693B946A4672A9967EDCB44 /* Foundation.framework */,
+				2CD3C3D997337A38E2935A14 /* SwiftUI.framework.framework */,
+				371C0006E50CCA4DBD7182F1 /* ActivityKit.framework.framework */,
+				C39DC16FB7E428C5A38DC14F /* WidgetKit.framework.framework */,
 			);
-			name = "OS X";
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		5E37943FCBECCB15BBF20C04 /* Products */ = {
+		6D978126BF401BCDBF1DF049 /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				20875314E7B501CE9F36D427 /* SCPFoundationIOS.app */,
+				70C7A8EA3239A5177BC15A81 /* SCPFoundationWidgets.appex */,
+				4BCE1B1029DCC3B85351E849 /* SCPFoundationWatch.app */,
+				EC1418266B82D25669BC681F /* SCPFoundationMac.app */,
+				8A4FC2BAAA61829314B0C771 /* SCPFoundationVision.app */,
+				9826E4118EC19D037D70FD11 /* SCPFoundationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		69CCB676473A31F8AEC82737 = {
+		8D8BDA4323B3468CD46E4953 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				762311D8D56147DB2112E28D /* Products */,
-				0AA08F46171E7142FF1B5A58 /* Frameworks */,
-				E0B1AA143A96B0813474757A /* Shared */,
-				2D6D2411F1F2CB33F9657B44 /* iOSApp */,
-				DF629CA75C22DF3513859E42 /* MacApp */,
-				F1BAD118578956E29EB501D5 /* VisionApp */,
-				D8229DF9496CC64807D76BA5 /* PlatformSupport */,
-				1AC4DE344DF3755664D514A3 /* WatchApp */,
-				D3D8DCAED517773A4B458B25 /* Widgets */,
-				0199D2BB2FBA1432B77CE1D5 /* Tests */,
-				6B0D441C65ACDB52C5A749C6 /* Backend */,
-				BD1328A949D2E5286E48B7A8 /* Info.plist */,
-				5FF81379D254FE5F96AEA0D1 /* Info.plist */,
-				D6EDA525A7DF2AE1DFE2A636 /* Info.plist */,
-				581DDF314D44795712D2285A /* Info.plist */,
-				A958ECFDCAF2A2E36152D8A0 /* Info.plist */,
-				5E37943FCBECCB15BBF20C04 /* Products */,
+				AAFEF04AAF8DC6118E7D8A90 /* AppLanguage.swift */,
+				F5C951E918B88CEDB07905B9 /* FoundationLogoView.swift */,
+				9E06A47CA3C0F2C3B6C700DE /* LiquidGlassKit.swift */,
+				F0DAF0CA2B00545E80D6EA94 /* SCPIncidentDoc.swift */,
+				50615D51F78E76DBCB416EEE /* SCPObject.swift */,
+				A98B91A6D06216779C116673 /* SCPRepository.swift */,
+				DF17458B5A4925C6DE28FEDB /* SCPStore.swift */,
 			);
+			name = Shared;
+			path = Sources/Shared;
 			sourceTree = "<group>";
 		};
-		6B0D441C65ACDB52C5A749C6 /* Backend */ = {
+		92DE920D22E8FEB7F3B0DDC0 /* Backend */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -316,127 +351,78 @@
 			path = Backend;
 			sourceTree = "<group>";
 		};
-		6BA5609AE42E4C6605D30A97 /* iOS */ = {
+		9E395BD907C4051340F809C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				187E23EB6EFFED2C1DD49DDA /* Foundation.framework */,
-				C318BDD3D0F4A0A5E467E67C /* SwiftUI.framework.framework */,
-				0BCA6F826A2067F7C4FE2606 /* ActivityKit.framework.framework */,
-				0A2788A5E5C93A0154610240 /* WidgetKit.framework.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		762311D8D56147DB2112E28D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				06368B626879D2B80AA0B747 /* SCPFoundationIOS.app */,
-				088677AF68C3D49A11A015B7 /* SCPFoundationWidgets.appex */,
-				CE4F98BD8BCF8FEDB6F31065 /* SCPFoundationWatch.app */,
-				C84C5CBE9A312C4DE70BD32F /* SCPFoundationMac.app */,
-				1DF08FF897CCAEB75BF4BB9B /* SCPFoundationVision.app */,
-				FEFA54003A78D1BB27DE1D01 /* SCPFoundationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AA915A7C0CDD1458EE98DE4E /* visionOS */ = {
+		C3DED810463679562DF03152 /* VisionApp */ = {
 			isa = PBXGroup;
 			children = (
-				4DFF9D9267E6AE903E09F661 /* SwiftUI.framework.framework */,
-			);
-			name = visionOS;
-			sourceTree = "<group>";
-		};
-		B845F76243F38860F4D5EC6E /* watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				E0B2144E2A1FC2B49177B729 /* Foundation.framework */,
-				A7DA51ABFC5CD951DF045D5C /* SwiftUI.framework.framework */,
-			);
-			name = watchOS;
-			sourceTree = "<group>";
-		};
-		D3D8DCAED517773A4B458B25 /* Widgets */ = {
-			isa = PBXGroup;
-			children = (
-				027048C42B033A4236D90764 /* ContainmentActivityWidget.swift */,
-				8DB55B6437F1ECDD8340D769 /* SCPFoundationWidgetsBundle.swift */,
-				792D4C73F03CF038E987C7F4 /* SCPStatusWidget.swift */,
-			);
-			name = Widgets;
-			path = Sources/Widgets;
-			sourceTree = "<group>";
-		};
-		D8229DF9496CC64807D76BA5 /* PlatformSupport */ = {
-			isa = PBXGroup;
-			children = (
-				096500F209A0D3B96D8AC741 /* PlatformRootViews.swift */,
-			);
-			name = PlatformSupport;
-			path = Sources/PlatformSupport;
-			sourceTree = "<group>";
-		};
-		DF629CA75C22DF3513859E42 /* MacApp */ = {
-			isa = PBXGroup;
-			children = (
-				06D185EE1A5CC487849D2419 /* SCPFoundationMacApp.swift */,
-			);
-			name = MacApp;
-			path = Sources/MacApp;
-			sourceTree = "<group>";
-		};
-		E0B1AA143A96B0813474757A /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				97193D784D877B57BDE57396 /* AppLanguage.swift */,
-				FD4C8D83F86C827164F9726F /* FoundationLogoView.swift */,
-				9D3BE04289F01D12FE74EC6E /* LiquidGlassKit.swift */,
-				BBB2AE29AA31C459371C14B4 /* SCPIncidentDoc.swift */,
-				FA2190CA98BAC64C1A851DE4 /* SCPObject.swift */,
-				82339EC673191CD09E0EC061 /* SCPRepository.swift */,
-				C0692DC0D1EB59A93BB0E946 /* SCPStore.swift */,
-			);
-			name = Shared;
-			path = Sources/Shared;
-			sourceTree = "<group>";
-		};
-		F1BAD118578956E29EB501D5 /* VisionApp */ = {
-			isa = PBXGroup;
-			children = (
-				54F3FB80B2C43314EC3AE288 /* SCPFoundationVisionApp.swift */,
+				DB4F219E1154F12A80E0EE28 /* SCPFoundationVisionApp.swift */,
 			);
 			name = VisionApp;
 			path = Sources/VisionApp;
 			sourceTree = "<group>";
 		};
+		CF492A3DC1043E60A6434AEA /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				4593E202B193471997D37D46 /* SCPFoundationWatchApp.swift */,
+				489AD085E98594E8C5F8E1A5 /* WatchRootView.swift */,
+			);
+			name = WatchApp;
+			path = Sources/WatchApp;
+			sourceTree = "<group>";
+		};
+		D949DD22814548ABFF142C5A /* PlatformSupport */ = {
+			isa = PBXGroup;
+			children = (
+				B6107B62A24684B4518D672E /* PlatformRootViews.swift */,
+			);
+			name = PlatformSupport;
+			path = Sources/PlatformSupport;
+			sourceTree = "<group>";
+		};
+		FC318347EFFE6ACE77F2B7BB /* visionOS */ = {
+			isa = PBXGroup;
+			children = (
+				8E338855DE047726E991FF7F /* SwiftUI.framework.framework */,
+			);
+			name = visionOS;
+			sourceTree = "<group>";
+		};
+		FE2F5538C077F4B6E57C3AD1 /* MacApp */ = {
+			isa = PBXGroup;
+			children = (
+				C7D822070D5E1440DF423ECE /* SCPFoundationMacApp.swift */,
+			);
+			name = MacApp;
+			path = Sources/MacApp;
+			sourceTree = "<group>";
+		};
+		FF2E1A27EED828209FBAC632 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AD8B8865969044876C35A210 /* LiquidGlassAndLogoTests.swift */,
+				CC13E5C79F1DF426586577B8 /* SCPStoreTests.swift */,
+			);
+			name = Tests;
+			path = Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		087B6C0B2972A6DCE567FD9A /* SCPFoundationMac */ = {
+		8694E17B92877902C80BB57C /* SCPFoundationVision */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8861C21C99DC7B932384567 /* Build configuration list for PBXNativeTarget "SCPFoundationMac" */;
+			buildConfigurationList = DCBC9EF3D867B250AF159840 /* Build configuration list for PBXNativeTarget "SCPFoundationVision" */;
 			buildPhases = (
-				029B308E1EE0B9E774656B37 /* Sources */,
-				8C0161EABE9A757A34A9415E /* Frameworks */,
-				8AA150E21791A6F18D4AC5B5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SCPFoundationMac;
-			productName = SCPFoundationMac;
-			productReference = C84C5CBE9A312C4DE70BD32F /* SCPFoundationMac.app */;
-			productType = "com.apple.product-type.application";
-		};
-		67AA469AF27CDA4571E11736 /* SCPFoundationVision */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E848DBBF55652945EEFA0C1 /* Build configuration list for PBXNativeTarget "SCPFoundationVision" */;
-			buildPhases = (
-				87270B7D2863B7340203880C /* Sources */,
-				BE717A19CF688B71B8C64980 /* Frameworks */,
-				76B6DD0748AE5CACE8ECC77B /* Resources */,
+				DC378F89746E8A4233B619B4 /* Sources */,
+				3DFDC9CB6827AE1174AFB8A4 /* Frameworks */,
+				53F0CC84FA8343FEAE4DE21A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -444,70 +430,53 @@
 			);
 			name = SCPFoundationVision;
 			productName = SCPFoundationVision;
-			productReference = 1DF08FF897CCAEB75BF4BB9B /* SCPFoundationVision.app */;
+			productReference = 8A4FC2BAAA61829314B0C771 /* SCPFoundationVision.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6BCABA3B238828807B3B71BE /* SCPFoundationTests */ = {
+		8FEF4DA45AFA5DA72071ACB2 /* SCPFoundationTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8535B546A58B035DE9DD1A0C /* Build configuration list for PBXNativeTarget "SCPFoundationTests" */;
+			buildConfigurationList = 0E7729E532FB6F6DFBBCBA5C /* Build configuration list for PBXNativeTarget "SCPFoundationTests" */;
 			buildPhases = (
-				25E407997EDD3205A58BF393 /* Sources */,
-				CAC794EED26CAF6E61AC9B5E /* Frameworks */,
-				4CB3104C6BB94F5F676BD881 /* Resources */,
+				69048C38EF0A31B654B58F16 /* Sources */,
+				5E55ADC8D509FC089C7BCB41 /* Frameworks */,
+				1FF793B8813AEBEBA8780CFA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9558EC3932494E54FA5EF439 /* PBXTargetDependency */,
+				FC6ED6DF09D8BA69F743435C /* PBXTargetDependency */,
 			);
 			name = SCPFoundationTests;
 			productName = SCPFoundationTests;
-			productReference = FEFA54003A78D1BB27DE1D01 /* SCPFoundationTests.xctest */;
+			productReference = 9826E4118EC19D037D70FD11 /* SCPFoundationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A3B174AFFAC51143329B7E3E /* SCPFoundationIOS */ = {
+		97B52BC26BA7ED8CA2F77663 /* SCPFoundationIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 31118F4E81B07447192FC34F /* Build configuration list for PBXNativeTarget "SCPFoundationIOS" */;
+			buildConfigurationList = ADD6F4373FF6B76AD530C8A1 /* Build configuration list for PBXNativeTarget "SCPFoundationIOS" */;
 			buildPhases = (
-				D5621AC440DAD56EC4DA2A38 /* Sources */,
-				24563F737476E6DD997B9A3B /* Frameworks */,
-				9FDA2BACC73A8AA486E54C44 /* Resources */,
-				F437638400F65BEF739C0DE9 /* Embed Foundation Extensions */,
+				3EA24FD3BBE1FD029B9C43DE /* Sources */,
+				62D47A4F3C8A6F356BBC3C50 /* Frameworks */,
+				5FD0294A25DB51A575C662A7 /* Resources */,
+				949B244445D02EF7A4AC2DF8 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				851E7588468970A5000426F9 /* PBXTargetDependency */,
+				F466DB4877B10F7DAFED5097 /* PBXTargetDependency */,
 			);
 			name = SCPFoundationIOS;
 			productName = SCPFoundationIOS;
-			productReference = 06368B626879D2B80AA0B747 /* SCPFoundationIOS.app */;
+			productReference = 20875314E7B501CE9F36D427 /* SCPFoundationIOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B20BC0F6012EA5CC259BAB5C /* SCPFoundationWatch */ = {
+		B79DC1D3A4C16A62F0549F51 /* SCPFoundationWidgets */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8154500322C197A2300851FD /* Build configuration list for PBXNativeTarget "SCPFoundationWatch" */;
+			buildConfigurationList = 909AEC3F3AE56C36807153E0 /* Build configuration list for PBXNativeTarget "SCPFoundationWidgets" */;
 			buildPhases = (
-				F1A8F594B2ED1A2FAECCAF01 /* Sources */,
-				9DB47540BEEB8432BC0D370D /* Frameworks */,
-				60F9F0AE83226BE8A14C0755 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SCPFoundationWatch;
-			productName = SCPFoundationWatch;
-			productReference = CE4F98BD8BCF8FEDB6F31065 /* SCPFoundationWatch.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B9CD4E182930CB55CBD9CFD8 /* SCPFoundationWidgets */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E92B3307E2E893481F53774B /* Build configuration list for PBXNativeTarget "SCPFoundationWidgets" */;
-			buildPhases = (
-				C1D8585D1CEAB7A19C4E0DA6 /* Sources */,
-				091E5E4BD7B22283BED6D126 /* Frameworks */,
-				0996005EAE653A8553A87C8A /* Resources */,
+				BDA7706D466EFFD21CA4A602 /* Sources */,
+				5D66E1FCFBCCA81A325F2A68 /* Frameworks */,
+				4D9CE802D8114235F4142246 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -515,13 +484,47 @@
 			);
 			name = SCPFoundationWidgets;
 			productName = SCPFoundationWidgets;
-			productReference = 088677AF68C3D49A11A015B7 /* SCPFoundationWidgets.appex */;
+			productReference = 70C7A8EA3239A5177BC15A81 /* SCPFoundationWidgets.appex */;
 			productType = "com.apple.product-type.app-extension";
+		};
+		BB84A1A7978CDFA6791ED744 /* SCPFoundationMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58090C6552C7F884083689B0 /* Build configuration list for PBXNativeTarget "SCPFoundationMac" */;
+			buildPhases = (
+				C0609B90E4E2AC7A68024C3B /* Sources */,
+				E83D3EF46F87F82CBD8EB7E0 /* Frameworks */,
+				710AC860F2380D0DBA1BE77D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCPFoundationMac;
+			productName = SCPFoundationMac;
+			productReference = EC1418266B82D25669BC681F /* SCPFoundationMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C98539D8E29C3D01D44349E7 /* SCPFoundationWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 733470DE62A724BE05849C63 /* Build configuration list for PBXNativeTarget "SCPFoundationWatch" */;
+			buildPhases = (
+				4495B10384E8CE4680A9A4C8 /* Sources */,
+				BD88D93E6E67582DAE654399 /* Frameworks */,
+				AA66A83CF52CE9F756404D42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCPFoundationWatch;
+			productName = SCPFoundationWatch;
+			productReference = 4BCE1B1029DCC3B85351E849 /* SCPFoundationWatch.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DA1B4955739C25906E9145E1 /* Project object */ = {
+		A682046F4E867142CE7AA9D5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1600;
@@ -529,7 +532,7 @@
 				TargetAttributes = {
 				};
 			};
-			buildConfigurationList = FFB5889A43810CDAE055F378 /* Build configuration list for PBXProject "SCPFoundation" */;
+			buildConfigurationList = 846BDB8962F3874A0D9D9342 /* Build configuration list for PBXProject "SCPFoundation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -537,224 +540,182 @@
 				en,
 				Base,
 			);
-			mainGroup = 69CCB676473A31F8AEC82737;
+			mainGroup = 2103A1C335AB0868AE90631D;
 			minimizedProjectReferenceProxies = 0;
 			preferredProjectObjectVersion = 100;
-			productRefGroup = 5E37943FCBECCB15BBF20C04 /* Products */;
+			productRefGroup = 9E395BD907C4051340F809C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3B174AFFAC51143329B7E3E /* SCPFoundationIOS */,
-				B9CD4E182930CB55CBD9CFD8 /* SCPFoundationWidgets */,
-				B20BC0F6012EA5CC259BAB5C /* SCPFoundationWatch */,
-				087B6C0B2972A6DCE567FD9A /* SCPFoundationMac */,
-				67AA469AF27CDA4571E11736 /* SCPFoundationVision */,
-				6BCABA3B238828807B3B71BE /* SCPFoundationTests */,
+				97B52BC26BA7ED8CA2F77663 /* SCPFoundationIOS */,
+				B79DC1D3A4C16A62F0549F51 /* SCPFoundationWidgets */,
+				C98539D8E29C3D01D44349E7 /* SCPFoundationWatch */,
+				BB84A1A7978CDFA6791ED744 /* SCPFoundationMac */,
+				8694E17B92877902C80BB57C /* SCPFoundationVision */,
+				8FEF4DA45AFA5DA72071ACB2 /* SCPFoundationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0996005EAE653A8553A87C8A /* Resources */ = {
+		1FF793B8813AEBEBA8780CFA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4CB3104C6BB94F5F676BD881 /* Resources */ = {
+		4D9CE802D8114235F4142246 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		60F9F0AE83226BE8A14C0755 /* Resources */ = {
+		53F0CC84FA8343FEAE4DE21A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76B6DD0748AE5CACE8ECC77B /* Resources */ = {
+		5FD0294A25DB51A575C662A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66A004E4E8F7C8A67C2193C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		710AC860F2380D0DBA1BE77D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AA150E21791A6F18D4AC5B5 /* Resources */ = {
+		AA66A83CF52CE9F756404D42 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FDA2BACC73A8AA486E54C44 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B55BE85B71008F0932A7911 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		029B308E1EE0B9E774656B37 /* Sources */ = {
+		3EA24FD3BBE1FD029B9C43DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A75EB8FE8DC65D284B57451 /* AppLanguage.swift in Sources */,
-				5064238E3CBF711BD7C81E48 /* FoundationLogoView.swift in Sources */,
-				637A94ADAAB66BF4D8A2E2A5 /* LiquidGlassKit.swift in Sources */,
-				FC352C2C07D64DB11CCBE233 /* SCPIncidentDoc.swift in Sources */,
-				23AFA38B8697684F5C4E245C /* SCPObject.swift in Sources */,
-				9F2E70450EBA7647DFB74968 /* SCPRepository.swift in Sources */,
-				27E55D6826C4B8203C358DBB /* SCPStore.swift in Sources */,
-				AE083EB8FA87554D9865B1B7 /* PlatformRootViews.swift in Sources */,
-				B17651B7A8D8DB625CB7F7B4 /* SCPFoundationMacApp.swift in Sources */,
+				43E005A2CA1564DE0496E84A /* AppLanguage.swift in Sources */,
+				9081B2A7F571F4DC372EE14F /* FoundationLogoView.swift in Sources */,
+				A46573F4EFA68993AE66BFF6 /* LiquidGlassKit.swift in Sources */,
+				94B5DF797A0ED85C0AEA292D /* SCPIncidentDoc.swift in Sources */,
+				2B4F28CC20B5DFD815E08F7D /* SCPObject.swift in Sources */,
+				081852F3B6355B93955FE3F2 /* SCPRepository.swift in Sources */,
+				A8B9D5CC87F7C43DCE8D1A72 /* SCPStore.swift in Sources */,
+				D628E163CDC588C00867258D /* AuthStore.swift in Sources */,
+				A6A1576067DE9700AE387803 /* ContainmentActivityAttributes.swift in Sources */,
+				452F8722A5DBD525BA4FB5D9 /* ContainmentLiveActivityManager.swift in Sources */,
+				2E4DD4ED0313EA01BFF976CD /* ProfileAvatarStore.swift in Sources */,
+				2DBE10C75A6B9F99841062C4 /* SCPFoundationIOSApp.swift in Sources */,
+				0001F436F7C618BB58719C8A /* AuthorizationScreen.swift in Sources */,
+				30B26A2BD6ED6CDD7DE01F53 /* BriefingScreen.swift in Sources */,
+				C541DC891E1A8B91DA8FF06B /* FavoritesScreen.swift in Sources */,
+				A2F17398441CEE2D54C83A39 /* IOSRootView.swift in Sources */,
+				539389094991F1231448C7EA /* IncidentsScreen.swift in Sources */,
+				2FD1CC7EF4AE00D9D3D2523C /* ProfileScreen.swift in Sources */,
+				BD61CB18DB9958F413DFB069 /* SCPDetailScreen.swift in Sources */,
+				BCE417267DE66301F77072E6 /* SCPListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		25E407997EDD3205A58BF393 /* Sources */ = {
+		4495B10384E8CE4680A9A4C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D6E62909514E3AE9B493F3D /* SCPStoreTests.swift in Sources */,
+				6D14E863252322829A235772 /* LiquidGlassKit.swift in Sources */,
+				71BE67185330A2F62D170527 /* SCPIncidentDoc.swift in Sources */,
+				10C2EEB4005A3AD45828D487 /* SCPObject.swift in Sources */,
+				AF8B10E5D77E16A19F0EC0ED /* SCPFoundationWatchApp.swift in Sources */,
+				5262B74023B7E7EE6A37ED08 /* WatchRootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		87270B7D2863B7340203880C /* Sources */ = {
+		69048C38EF0A31B654B58F16 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9934EE6309FCD3D15303AD9B /* AppLanguage.swift in Sources */,
-				39DC8ED03254C3E0B2A167E6 /* FoundationLogoView.swift in Sources */,
-				AEFDCC91851F848570E52739 /* LiquidGlassKit.swift in Sources */,
-				9EDD93D43DDCB78821358B02 /* SCPIncidentDoc.swift in Sources */,
-				62E2FEDB66203BAEA47CA24D /* SCPObject.swift in Sources */,
-				628B2765E4A5AD9BA95E593F /* SCPRepository.swift in Sources */,
-				40BE84E7AD1DFB22EF94766D /* SCPStore.swift in Sources */,
-				B9768C051F46D2CF1C3158C9 /* PlatformRootViews.swift in Sources */,
-				C6322329434766A29C67E070 /* SCPFoundationVisionApp.swift in Sources */,
+				E94C8FBDAD6D0637814C151D /* LiquidGlassAndLogoTests.swift in Sources */,
+				5578DBBDB7C20B006B63C958 /* SCPStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1D8585D1CEAB7A19C4E0DA6 /* Sources */ = {
+		BDA7706D466EFFD21CA4A602 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76EFF0DB51CD1F8D7338A69A /* LiquidGlassKit.swift in Sources */,
-				6EF8EE20265A8A241D618E97 /* SCPIncidentDoc.swift in Sources */,
-				6F81DC0B601553E9298F3482 /* SCPObject.swift in Sources */,
-				AC84EEABACC279982A0DE241 /* ContainmentActivityWidget.swift in Sources */,
-				8AB5524BBCC96FAC35827A9B /* SCPFoundationWidgetsBundle.swift in Sources */,
-				73348DC30879639C0E9A7C84 /* SCPStatusWidget.swift in Sources */,
+				05F279442B464BE8D39F8A45 /* LiquidGlassKit.swift in Sources */,
+				613B5B289CB3E42484678423 /* SCPIncidentDoc.swift in Sources */,
+				313D41C5E8388E9A183C2FDD /* SCPObject.swift in Sources */,
+				94789FA87DEB5BDC8B9219D5 /* ContainmentActivityWidget.swift in Sources */,
+				438B77B7A937213532A44DBE /* SCPFoundationWidgetsBundle.swift in Sources */,
+				DBC541E6FCD95BB650FA61D5 /* SCPStatusWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5621AC440DAD56EC4DA2A38 /* Sources */ = {
+		C0609B90E4E2AC7A68024C3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043020B18E9AFF14AC895BD1 /* AppLanguage.swift in Sources */,
-				89447BABD15DAC5CA43D9B65 /* FoundationLogoView.swift in Sources */,
-				D81A6E2FA5C2BB22A74B8280 /* LiquidGlassKit.swift in Sources */,
-				2C839BA55EDF5ABD427BD70C /* SCPIncidentDoc.swift in Sources */,
-				2EE2BB841816D1F219FB25F3 /* SCPObject.swift in Sources */,
-				EE2DD6948077E518C50018CE /* SCPRepository.swift in Sources */,
-				BA61CD6724FD1E41A1B7C58A /* SCPStore.swift in Sources */,
-				4AED49F599225FE9ACA7FAEC /* AuthStore.swift in Sources */,
-				4C61E633C3728A594A7B70EE /* ContainmentActivityAttributes.swift in Sources */,
-				D9CD6BF2AA1E1E7F384C397E /* ContainmentLiveActivityManager.swift in Sources */,
-				27209395A2F73D675CF79222 /* ProfileAvatarStore.swift in Sources */,
-				E0A48D1332E401EAAD240E51 /* SCPFoundationIOSApp.swift in Sources */,
-				618F9F9A8F1C3362BF73D712 /* AuthorizationScreen.swift in Sources */,
-				7F42608CB560E4BAAA51F923 /* BriefingScreen.swift in Sources */,
-				ED1077BCDDED31D6DD882269 /* FavoritesScreen.swift in Sources */,
-				ACA314680B2FCA4F8DBA0BD7 /* IOSRootView.swift in Sources */,
-				7A72CE4A81B0CC3F492D7688 /* IncidentsScreen.swift in Sources */,
-				E55AF84821C6080B464BDB89 /* ProfileScreen.swift in Sources */,
-				82584064DED9A6B8BC078081 /* SCPDetailScreen.swift in Sources */,
-				AC7808D7E509EBAA9DE913DD /* SCPListScreen.swift in Sources */,
+				D14AB0FEEA091B7C876BF35A /* AppLanguage.swift in Sources */,
+				F6D12862180173B477115971 /* FoundationLogoView.swift in Sources */,
+				7544A662B4A9B4BFB34D2625 /* LiquidGlassKit.swift in Sources */,
+				FA43AB69826A485CBA7F8BB3 /* SCPIncidentDoc.swift in Sources */,
+				0DCC676B67F275C81F9755FE /* SCPObject.swift in Sources */,
+				EFA411F54B7C7C060EA989E4 /* SCPRepository.swift in Sources */,
+				A2A1F2AF0717D1D61816C935 /* SCPStore.swift in Sources */,
+				425CFA87F1AF63F839ECC2C9 /* PlatformRootViews.swift in Sources */,
+				335D410773BD533AFA29B636 /* SCPFoundationMacApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1A8F594B2ED1A2FAECCAF01 /* Sources */ = {
+		DC378F89746E8A4233B619B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97BFBE2EC5E3FF2AAF7B15CA /* LiquidGlassKit.swift in Sources */,
-				7577179EB267776D785DA53F /* SCPIncidentDoc.swift in Sources */,
-				FAD48811FA0F3A954BE5CDFF /* SCPObject.swift in Sources */,
-				1E099089348F82D653B1658C /* SCPFoundationWatchApp.swift in Sources */,
-				0D43852BCBD43A25B9538456 /* WatchRootView.swift in Sources */,
+				938C7C89B627F9BA17C3FF84 /* AppLanguage.swift in Sources */,
+				ADA9FECD9A4DCA73AA464667 /* FoundationLogoView.swift in Sources */,
+				4CE8EA36DE24BA3EC6AD669E /* LiquidGlassKit.swift in Sources */,
+				20F96E7E4C05C698C39B1046 /* SCPIncidentDoc.swift in Sources */,
+				2E78CD8F6395770474ABD50E /* SCPObject.swift in Sources */,
+				93DDC3C37A6B8F1B104587C2 /* SCPRepository.swift in Sources */,
+				2F93EB9EC1771174BE416915 /* SCPStore.swift in Sources */,
+				874D8F4DE22579E55A6DCF70 /* PlatformRootViews.swift in Sources */,
+				2945A255A9EB4ABA28A54085 /* SCPFoundationVisionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		851E7588468970A5000426F9 /* PBXTargetDependency */ = {
+		F466DB4877B10F7DAFED5097 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SCPFoundationWidgets;
-			target = B9CD4E182930CB55CBD9CFD8 /* SCPFoundationWidgets */;
-			targetProxy = D3A5165CF53DFFE72406726B /* PBXContainerItemProxy */;
+			target = B79DC1D3A4C16A62F0549F51 /* SCPFoundationWidgets */;
+			targetProxy = A52CC826858A575053F6113A /* PBXContainerItemProxy */;
 		};
-		9558EC3932494E54FA5EF439 /* PBXTargetDependency */ = {
+		FC6ED6DF09D8BA69F743435C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SCPFoundationIOS;
-			target = A3B174AFFAC51143329B7E3E /* SCPFoundationIOS */;
-			targetProxy = 4FC30C1BCC4F906E365CBEB0 /* PBXContainerItemProxy */;
+			target = 97B52BC26BA7ED8CA2F77663 /* SCPFoundationIOS */;
+			targetProxy = BDB3A6D57C8BE8DE94BD8DFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		002FEFA76186CC1DBBE0B1F1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Sources/WatchApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.watchkitapp;
-				PRODUCT_NAME = SCPFoundationWatch;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		1D43C40BB81A455D3F2D6F9E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Sources/WatchApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.watchkitapp;
-				PRODUCT_NAME = SCPFoundationWatch;
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		24ADEC19815FBA24879BDE33 /* Release */ = {
+		2AFE70B3EB06BC110C4E6D0F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -774,210 +735,7 @@
 			};
 			name = Release;
 		};
-		27270BEA9D44829BBBF1EC84 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Sources/VisionApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.vision;
-				PRODUCT_NAME = SCPFoundationVision;
-				SDKROOT = xros;
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 7;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		675B4943DB028B2E8A6733FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Sources/VisionApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.vision;
-				PRODUCT_NAME = SCPFoundationVision;
-				SDKROOT = xros;
-				SUPPORTED_PLATFORMS = "xros xrsimulator";
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = 7;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		692D60E2B5122D4CA5D04483 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Sources/MacApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.mac;
-				PRODUCT_NAME = SCPFoundationMac;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.9;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		6C5DF60063D96C78C4920974 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Sources/Widgets/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.widgets;
-				PRODUCT_NAME = SCPFoundationWidgets;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.9;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		79D417ACA45A5896C4C24007 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Sources/MacApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.mac;
-				PRODUCT_NAME = SCPFoundationMac;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.9;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		7F209A4F787BF522DCA98EA3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.tests;
-				PRODUCT_NAME = SCPFoundationTests;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.9;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCPFoundationIOS.app/SCPFoundationIOS";
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Debug;
-		};
-		A98958696A32B0B920CF5B9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Sources/iOSApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app;
-				PRODUCT_NAME = SCPFoundationIOS;
-				SDKROOT = iphoneos;
-				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 10.0;
-				XROS_DEPLOYMENT_TARGET = 2.0;
-			};
-			name = Release;
-		};
-		AA4600FA59CFD4F97E6FE702 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		C2F8F08E9DCB17CB2B3B1AC1 /* Debug */ = {
+		436049EE017BF4BB8754FFDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1038,7 +796,156 @@
 			};
 			name = Debug;
 		};
-		DDBF9708B2647F5B68E618F7 /* Debug */ = {
+		5645F946A8124470E02D2928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/WatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.watchkitapp;
+				PRODUCT_NAME = SCPFoundationWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		6D54F712685BABFCFEECD847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/MacApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.mac;
+				PRODUCT_NAME = SCPFoundationMac;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		817EAE6E414481DC74151FAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/MacApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.mac;
+				PRODUCT_NAME = SCPFoundationMac;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		97B84324CC94154B7C3531C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/VisionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.vision;
+				PRODUCT_NAME = SCPFoundationVision;
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 7;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		98AB2C933E285AC06EF09905 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/iOSApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app;
+				PRODUCT_NAME = SCPFoundationIOS;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		9DF052CEB892DD9E60419B65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/Widgets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.widgets;
+				PRODUCT_NAME = SCPFoundationWidgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.9;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A8F944961E121D6BDB50CFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.tests;
+				PRODUCT_NAME = SCPFoundationTests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCPFoundationIOS.app/SCPFoundationIOS";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		BA117E3BE436EB791F69C58A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1060,7 +967,61 @@
 			};
 			name = Debug;
 		};
-		E65845326FF11F058A672FD9 /* Release */ = {
+		C2C30DBF2332E2C36BE7CB35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D3EFC4B2E86544538037A8AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1073,79 +1034,122 @@
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.9;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCPFoundationIOS.app/SCPFoundationIOS";
-				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 10.0;
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
-			name = Release;
+			name = Debug;
+		};
+		F46439864C709A8DA348CF00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/VisionApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.vision;
+				PRODUCT_NAME = SCPFoundationVision;
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 7;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		FCC75262B58A5BB3FFA67A3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Sources/WatchApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foundation.scp.app.watchkitapp;
+				PRODUCT_NAME = SCPFoundationWatch;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31118F4E81B07447192FC34F /* Build configuration list for PBXNativeTarget "SCPFoundationIOS" */ = {
+		0E7729E532FB6F6DFBBCBA5C /* Build configuration list for PBXNativeTarget "SCPFoundationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A98958696A32B0B920CF5B9A /* Release */,
-				DDBF9708B2647F5B68E618F7 /* Debug */,
+				A8F944961E121D6BDB50CFE5 /* Release */,
+				D3EFC4B2E86544538037A8AB /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3E848DBBF55652945EEFA0C1 /* Build configuration list for PBXNativeTarget "SCPFoundationVision" */ = {
+		58090C6552C7F884083689B0 /* Build configuration list for PBXNativeTarget "SCPFoundationMac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27270BEA9D44829BBBF1EC84 /* Release */,
-				675B4943DB028B2E8A6733FD /* Debug */,
+				6D54F712685BABFCFEECD847 /* Release */,
+				817EAE6E414481DC74151FAC /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8154500322C197A2300851FD /* Build configuration list for PBXNativeTarget "SCPFoundationWatch" */ = {
+		733470DE62A724BE05849C63 /* Build configuration list for PBXNativeTarget "SCPFoundationWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				002FEFA76186CC1DBBE0B1F1 /* Release */,
-				1D43C40BB81A455D3F2D6F9E /* Debug */,
+				5645F946A8124470E02D2928 /* Release */,
+				FCC75262B58A5BB3FFA67A3D /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8535B546A58B035DE9DD1A0C /* Build configuration list for PBXNativeTarget "SCPFoundationTests" */ = {
+		846BDB8962F3874A0D9D9342 /* Build configuration list for PBXProject "SCPFoundation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E65845326FF11F058A672FD9 /* Release */,
-				7F209A4F787BF522DCA98EA3 /* Debug */,
+				436049EE017BF4BB8754FFDD /* Debug */,
+				C2C30DBF2332E2C36BE7CB35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8861C21C99DC7B932384567 /* Build configuration list for PBXNativeTarget "SCPFoundationMac" */ = {
+		909AEC3F3AE56C36807153E0 /* Build configuration list for PBXNativeTarget "SCPFoundationWidgets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				692D60E2B5122D4CA5D04483 /* Release */,
-				79D417ACA45A5896C4C24007 /* Debug */,
+				2AFE70B3EB06BC110C4E6D0F /* Release */,
+				9DF052CEB892DD9E60419B65 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E92B3307E2E893481F53774B /* Build configuration list for PBXNativeTarget "SCPFoundationWidgets" */ = {
+		ADD6F4373FF6B76AD530C8A1 /* Build configuration list for PBXNativeTarget "SCPFoundationIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24ADEC19815FBA24879BDE33 /* Release */,
-				6C5DF60063D96C78C4920974 /* Debug */,
+				98AB2C933E285AC06EF09905 /* Release */,
+				BA117E3BE436EB791F69C58A /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FFB5889A43810CDAE055F378 /* Build configuration list for PBXProject "SCPFoundation" */ = {
+		DCBC9EF3D867B250AF159840 /* Build configuration list for PBXNativeTarget "SCPFoundationVision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C2F8F08E9DCB17CB2B3B1AC1 /* Debug */,
-				AA4600FA59CFD4F97E6FE702 /* Release */,
+				97B84324CC94154B7C3531C3 /* Release */,
+				F46439864C709A8DA348CF00 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DA1B4955739C25906E9145E1 /* Project object */;
+	rootObject = A682046F4E867142CE7AA9D5 /* Project object */;
 }
